@@ -1,0 +1,160 @@
+@import "libs/fonts";
+@import "libs/flexbox";
+@import "libs/placeholder";
+@import "libs/fontello";
+@import "libs/popups";
+@import "libs/header";
+@import "libs/footer";
+
+@import "libs/wp-block-columns";
+@import "libs/wp-block-image";
+
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: none;
+  text-decoration: none;
+	font-family: 'Lato-Light';
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ul,ol{
+  margin: 0;
+}
+
+input[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+ul li,ol li{
+  margin: 0;
+}
+h1,h2,h3,h4,h5{
+  font-family: 'BendesSansRegular';
+  text-transform: uppercase;
+  color: #000;
+  span{
+    font-family: 'BendesSansRegular';
+  }
+}
+h3{
+  color: #000000;
+  font-size: 18px;
+}
+
+p{
+  color: #000000;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.clearfix{
+  &:after {
+    content: " ";
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    clear: both;
+    height: 0;
+  }
+}
+
+.bread-crumbs{
+  display: none;
+}
+
+.container{
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  position: relative;
+  min-width: 320px;
+}
+
+
+@media screen and (min-width: 375px) {
+  .container{
+    padding: 0 20px;
+  }
+}
+
+@media screen and (min-width: 768px){
+  h3{
+    font-size: 22px;
+      letter-spacing: 1.62px;
+  }
+  p{
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .bread-crumbs{
+    padding: 55px 0;
+    display: block;
+    ul{
+      @include flexbox;
+      li{
+        position: relative;
+        padding: 0 17px;
+        &:first-of-type{
+          padding-left: 0;
+        }
+        &:last-of-type{
+          padding-right: 0;
+          &::after{
+            display: none;
+          }
+        }
+        &::after {
+          content: "/";
+          top: 50%;
+          right: 0;
+          color: #222;
+          font-size: 16px;
+          line-height: 20px;
+          position: absolute;
+          -webkit-transform: translate(0, -50%);
+          -moz-transform: translate(0, -50%);
+          -ms-transform: translate(0, -50%);
+          -o-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+        }
+        a, span{
+          font-size: 16px;
+          letter-spacing: 2.4px;
+          text-transform: uppercase;
+          color: #000;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1320px){
+  h3{
+      font-size: 36px;
+  }
+}
+@media screen and (min-width: 1420px) {
+
+  .container{
+    width: 1400px;
+    padding: 0;
+  }
+
+}
+
+
+

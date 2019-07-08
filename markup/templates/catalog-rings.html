@@ -1,0 +1,1505 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Catalog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/catalog.css">
+</head>
+
+<body>
+
+    <!-- popups -->
+    <!-- .closeBtn - закрывает попап -->
+    <!-- .open-* - открывает попап -->
+
+    <div class="overlay-callBack overlayPopup">
+        <div class="close"></div>
+        <div class="callBack__popup">
+            <span class="close-popup closeBtn"></span>
+            <div class="content">
+                <div class="popup__logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="232.787" height="50.5" viewBox="0 0 232.787 50.5">
+                        <path id="BENDES_Logo_transparent_black_" data-name="BENDES Logo (transparent black)" d="M284.481,841.047a18.361,18.361,0,0,0,4.887,5.393,12.459,12.459,0,0,0,7.108,1.987,9.831,9.831,0,0,0,7.367-3.016,10.157,10.157,0,0,0,2.924-7.344q0-5.393-6-8.374-5.627-2.342-11.18-4.754a11.194,11.194,0,0,1-6-10.29,12.088,12.088,0,0,1,4.887-10.219q4.516-3.406,11.55-3.406a19.828,19.828,0,0,1,5.775.852,13.222,13.222,0,0,1,4.813,2.555q-.518,1.136-.888,2.129-.074.213-1.111,3.69h-.74a9.252,9.252,0,0,0-9.181-6.174,9.857,9.857,0,0,0-6.626,2.306,7.511,7.511,0,0,0-2.7,6q0,5.393,6,8.374,5.627,2.413,11.254,4.754,6.071,3.406,6.071,9.793a14.773,14.773,0,0,1-5.331,11.922q-5.035,4.258-12.957,4.258a22.456,22.456,0,0,1-6.663-1.135,12.63,12.63,0,0,1-5.4-2.981,18.013,18.013,0,0,0,.851-2.874q.259-1.313.555-3.442Zm-16.4-18.005q1.407,0,3.739-.185t2.851-.185l-.222,1.925.222,2.073q-1.333,0-3.7-.185t-2.887-.185H256.608v21.619q2.369,0,7.737-.148t5.664-.148a29.454,29.454,0,0,0,3.036-.111q.963-.111,3.776-.555l-.222,2.221.222,2.221H250.093v-50.42h26.284l-.222,2.221.222,2.221q-2.221-.444-3.628-.629a23.342,23.342,0,0,0-3.036-.185l-7.4-.148h-5.7v18.584Zm-62.976,25.025q2.221,0,5.923.111t3.776.111a51.885,51.885,0,0,0,6.886-.37,15.844,15.844,0,0,0,5.109-1.629,17.45,17.45,0,0,0,8.292-8.737,30.267,30.267,0,0,0,2.369-12.513q0-11.7-5.22-16.548t-17.806-4.85q-1.555,0-5.257.148t-4.072.148ZM215.4,800.978h5.035a36.05,36.05,0,0,1,10.588,1.185,16.976,16.976,0,0,1,5.775,3.258,19.875,19.875,0,0,1,5.96,8.144,27.557,27.557,0,0,1,1.962,10.365,30.666,30.666,0,0,1-2.591,12.957,26.879,26.879,0,0,1-6.738,8.885,21.607,21.607,0,0,1-7.959,4.183q-4.776,1.444-14.4,1.444H198.593v-50.42Zm-24.433,50.455-3.85-4.5-31.985-35.259h-.74v39.759l-2.073-.221-2.073.221V800.978h2.887L188.3,838.967h.74V800.978l2.073.221,2.073-.221v50.455Zm-54.873-28.392q1.407,0,3.739-.185t2.85-.185l-.222,1.925.222,2.073q-1.333,0-3.7-.185t-2.888-.185H124.618v21.619q2.369,0,7.737-.148t5.664-.148a29.455,29.455,0,0,0,3.036-.111q.962-.111,3.776-.555l-.222,2.221.222,2.221H118.1v-50.42h26.284l-.222,2.221.222,2.221q-2.221-.444-3.628-.629a23.341,23.341,0,0,0-3.036-.185l-7.4-.148h-5.7v18.584Zm-41.68-22.063q8.515,0,12.513,2.3t4,7.922a11.7,11.7,0,0,1-3.295,8.4,16.944,16.944,0,0,1-8.4,4.7,15.314,15.314,0,0,1,8.885,2.591,10.3,10.3,0,0,1,4.665,9.033,14.422,14.422,0,0,1-6.664,12.512,16.748,16.748,0,0,1-7.478,2.591,67.093,67.093,0,0,1-8.144.37H79.9v-50.42ZM89.6,823.264A40.308,40.308,0,0,0,94.637,823a13.581,13.581,0,0,0,4.146-1.3,9.188,9.188,0,0,0,5.7-8.959q0-4.961-3.184-7t-9.4-2.036H86.418v19.546Zm3.85,25.4a12.756,12.756,0,0,0,8.959-3.184,10.717,10.717,0,0,0,3.48-8.292q0-6.219-4.294-8.885Q97.968,826,90.565,826H86.418v22.656Z"
+                        transform="translate(-79.903 -800.978)"></path>
+                    </svg>
+                </div>
+                <div class="popup__form">
+                    <form>
+                        <div class="form-input">
+                            <input type="text" placeholder="+7 XXX XXX XX XX">
+                        </div>
+                        <div class="form-button">
+                            <button>ПЕРЕЗВОНИТЕ МНЕ</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="popup__contacts">
+                    <div class="item">
+                        <h4>МОСКВА</h4>
+                        <p>ЕЖЕДНЕВНО С 11:00 ДО 21:00</p>
+                        <a href="tel:+74951201027">+7 (495) 120 10 27</a>
+                    </div>
+                    <div class="item">
+                        <h4>КРАСНОДАР</h4>
+                        <p>ЕЖЕДНЕВНО С 13:00 ДО 20:00</p>
+                        <a href="tel:+78612062214">+7 (861) 206 22 14</a>
+                    </div>
+                    <div class="item">
+                        <h4>ДРУГИЕ РЕГИОНЫ</h4>
+                        <p>ЕЖЕДНЕВНО С 11:00 ДО 21:00 (ПО МОСКОВСКОМУ ВРЕМЕНИ)</p>
+                        <a href="tel:+78006782410">+7 (800) 678 24 10</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay-contacts overlayPopup">
+        <div class="close"></div>
+        <div class="contacts__popup">
+            <span class="close-popup closeBtn"></span>
+            <div class="content">
+                <div class="popup__logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="232.787" height="50.5" viewBox="0 0 232.787 50.5">
+                        <path id="BENDES_Logo_transparent_black_" data-name="BENDES Logo (transparent black)" d="M284.481,841.047a18.361,18.361,0,0,0,4.887,5.393,12.459,12.459,0,0,0,7.108,1.987,9.831,9.831,0,0,0,7.367-3.016,10.157,10.157,0,0,0,2.924-7.344q0-5.393-6-8.374-5.627-2.342-11.18-4.754a11.194,11.194,0,0,1-6-10.29,12.088,12.088,0,0,1,4.887-10.219q4.516-3.406,11.55-3.406a19.828,19.828,0,0,1,5.775.852,13.222,13.222,0,0,1,4.813,2.555q-.518,1.136-.888,2.129-.074.213-1.111,3.69h-.74a9.252,9.252,0,0,0-9.181-6.174,9.857,9.857,0,0,0-6.626,2.306,7.511,7.511,0,0,0-2.7,6q0,5.393,6,8.374,5.627,2.413,11.254,4.754,6.071,3.406,6.071,9.793a14.773,14.773,0,0,1-5.331,11.922q-5.035,4.258-12.957,4.258a22.456,22.456,0,0,1-6.663-1.135,12.63,12.63,0,0,1-5.4-2.981,18.013,18.013,0,0,0,.851-2.874q.259-1.313.555-3.442Zm-16.4-18.005q1.407,0,3.739-.185t2.851-.185l-.222,1.925.222,2.073q-1.333,0-3.7-.185t-2.887-.185H256.608v21.619q2.369,0,7.737-.148t5.664-.148a29.454,29.454,0,0,0,3.036-.111q.963-.111,3.776-.555l-.222,2.221.222,2.221H250.093v-50.42h26.284l-.222,2.221.222,2.221q-2.221-.444-3.628-.629a23.342,23.342,0,0,0-3.036-.185l-7.4-.148h-5.7v18.584Zm-62.976,25.025q2.221,0,5.923.111t3.776.111a51.885,51.885,0,0,0,6.886-.37,15.844,15.844,0,0,0,5.109-1.629,17.45,17.45,0,0,0,8.292-8.737,30.267,30.267,0,0,0,2.369-12.513q0-11.7-5.22-16.548t-17.806-4.85q-1.555,0-5.257.148t-4.072.148ZM215.4,800.978h5.035a36.05,36.05,0,0,1,10.588,1.185,16.976,16.976,0,0,1,5.775,3.258,19.875,19.875,0,0,1,5.96,8.144,27.557,27.557,0,0,1,1.962,10.365,30.666,30.666,0,0,1-2.591,12.957,26.879,26.879,0,0,1-6.738,8.885,21.607,21.607,0,0,1-7.959,4.183q-4.776,1.444-14.4,1.444H198.593v-50.42Zm-24.433,50.455-3.85-4.5-31.985-35.259h-.74v39.759l-2.073-.221-2.073.221V800.978h2.887L188.3,838.967h.74V800.978l2.073.221,2.073-.221v50.455Zm-54.873-28.392q1.407,0,3.739-.185t2.85-.185l-.222,1.925.222,2.073q-1.333,0-3.7-.185t-2.888-.185H124.618v21.619q2.369,0,7.737-.148t5.664-.148a29.455,29.455,0,0,0,3.036-.111q.962-.111,3.776-.555l-.222,2.221.222,2.221H118.1v-50.42h26.284l-.222,2.221.222,2.221q-2.221-.444-3.628-.629a23.341,23.341,0,0,0-3.036-.185l-7.4-.148h-5.7v18.584Zm-41.68-22.063q8.515,0,12.513,2.3t4,7.922a11.7,11.7,0,0,1-3.295,8.4,16.944,16.944,0,0,1-8.4,4.7,15.314,15.314,0,0,1,8.885,2.591,10.3,10.3,0,0,1,4.665,9.033,14.422,14.422,0,0,1-6.664,12.512,16.748,16.748,0,0,1-7.478,2.591,67.093,67.093,0,0,1-8.144.37H79.9v-50.42ZM89.6,823.264A40.308,40.308,0,0,0,94.637,823a13.581,13.581,0,0,0,4.146-1.3,9.188,9.188,0,0,0,5.7-8.959q0-4.961-3.184-7t-9.4-2.036H86.418v19.546Zm3.85,25.4a12.756,12.756,0,0,0,8.959-3.184,10.717,10.717,0,0,0,3.48-8.292q0-6.219-4.294-8.885Q97.968,826,90.565,826H86.418v22.656Z"
+                        transform="translate(-79.903 -800.978)"></path>
+                    </svg>
+                </div>
+                <div class="separator"></div>
+                <div class="popup__info">
+                    <div class="item">
+                        <ul class="links">
+                            <li>
+                                <a href="javascript:void(0)" class="closeBtn open-callBack">
+                                    <i class="icon-icon3"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <i class="icon-icon1"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <i class="icon-icon4"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <p>ЕЖЕДНЕВНО С 11:00 ДО 21:00</p>
+                        <p><span>УЛИЦА 2-АЯ РЫБИНСКАЯ, 13</span>
+                            <span>МОСКВА, 107113</span></p>
+                        <p><span>ПОДЪЕЗД СО СТОРОНЫ</span>
+                            <span>1-ОЙ РЫБИНСКОЙ УЛИЦЫ</span></p>
+
+                        <div class="maps">
+                            <a href="https://yandex.ua/maps/-/CCW4Y0Na">
+                                <i class="icon-yandex"></i> ОТКРЫТЬ В ЯНДЕКС.КАРТАХ
+                            </a>
+                            <a href="https://goo.gl/maps/LNVkjhjQXSdDgaxz6">
+                                <i class="icon-google"></i> ОТКРЫТЬ В GOOGLE MAPS
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <ul class="links">
+                            <li>
+                                <a href="javascript:void(0)" class="closeBtn open-callBack">
+                                    <i class="icon-icon3"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <i class="icon-icon1"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <i class="icon-icon4"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <p>ЕЖЕДНЕВНО С 11:00 ДО 21:00</p>
+                        <p><span>УЛИЦА 2-АЯ РЫБИНСКАЯ, 13</span>
+                            <span>МОСКВА, 107113</span></p>
+                        <p><span>ПОДЪЕЗД СО СТОРОНЫ</span>
+                            <span>1-ОЙ РЫБИНСКОЙ УЛИЦЫ</span></p>
+
+                        <div class="maps">
+                            <a href="https://yandex.ua/maps/-/CCW4Y0Na">
+                                <i class="icon-yandex"></i> ОТКРЫТЬ В ЯНДЕКС.КАРТАХ
+                            </a>
+                            <a href="https://goo.gl/maps/LNVkjhjQXSdDgaxz6">
+                                <i class="icon-google"></i> ОТКРЫТЬ В GOOGLE MAPS
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <ul class="links">
+                            <li>
+                                <a href="javascript:void(0)" class="closeBtn open-callBack">
+                                    <i class="icon-icon3"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <i class="icon-icon1"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <i class="icon-icon4"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <p>ЕЖЕДНЕВНО С 11:00 ДО 21:00</p>
+                        <div class="delivery">
+                            <h4>Доставка по России и СНГ</h4>
+                            <p>Осуществляем доставку специализированной государственной курьерской службой с охраной “Спецсвязь”. Все отправления застрахованы.</p>
+                            <h4>Выезд менеджера в ваш город</h4>
+                            <p>Наш менеджер приедет к вам с образцами изделий, поможет определиться с моделью</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="flex-wrap">
+                    <div class="item">
+                        <a href="tel:78009876543" class="header__phone">+7 800 987 65 43</a>
+                    </div>
+                    <div class="item">
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0)">ПРОИЗВОДСТВО</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">ДОСТАВКА И ОПЛАТА</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">ГАРАНТИЯ</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">ИСТОРИИ ЛЮБВИ</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">ЖУРНАЛ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="container">
+                <div class="flex-wrap">
+                    <!-- mobile hamburger -->
+                    <button class="toggle-menu">
+                        <span class="hamburger">
+                        <span class="sw-topper"></span>
+                        <span class="sw-bottom"></span>
+                        <span class="sw-footer"></span>
+                        </span>
+                    </button>
+                    <!-- end mobile hamburger -->
+
+                    <a href="index.html" class="header__logo">
+                        <img src="../img/logo.png" alt="logotype">
+                    </a>
+
+                    <!-- desktop menu -->
+                    <div class="header__nav">
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)">ИЗГОТОВЛЕНИЕ НА ЗАКАЗ</a>
+                                </li>
+                                <li class="rings">
+                                    <a href="javascript:void(0)">ПОМОЛВКА И СВАДЬБА</a>
+                                    <ul class="sub-menu">
+                                        <li>
+                                            <div>
+                                                <div class="heading">
+                                                    <span>ПОМОЛВКА</span>
+                                                    <a href="catalog.html" class="show-more">ПОКАЗАТЬ ВСЕ</a>
+                                                </div>
+                                                <div class="body-content">
+                                                    <span class="title">КОЛИЧЕСТВО БРИЛЛИАНТОВ</span>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="javascript:void(0)">С ОДНИМ БРИЛЛИАНТОМ</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">С ОБСЫПКОЙ ИЗ БРИЛЛИАНТОВ</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">КОМПЛЕКТЫ С ОБРУЧАЛЬНЫМ КОЛЬЦОМ</a>
+                                                        </li>
+                                                    </ul>
+                                                    <span class="title">ВСТАВКИ</span>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="javascript:void(0)">БРИЛЛИАНТЫ</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">ЦВЕТНЫЕ КАМНИ</a>
+                                                        </li>
+                                                    </ul>
+                                                    <span class="title">ОГРАНКА ЦЕНТРАЛЬНОГО КАМНЯ</span>
+                                                    <ul class="faceting">
+                                                        <li>
+                                                            <a href="javascript:void(0)">
+                                                                <i class="icon-assher_front"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">
+                                                                <i class="icon-baguette_front"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">
+                                                                <i class="icon-cushion_front"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">
+                                                                <i class="icon-emerald_front"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">
+                                                                <i class="icon-marquise_front"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">
+                                                                <i class="icon-oval_front"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">
+                                                                <i class="icon-round_front"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">
+                                                                <i class="icon-pear_front"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">
+                                                                <i class="icon-princess_front"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">
+                                                                <i class="icon-radiant_front"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <div class="heading">
+                                                    <span>СВАДЬБА</span>
+                                                    <a href="catalog.html" class="show-more">ПОКАЗАТЬ ВСЕ</a>
+                                                </div>
+                                                <div class="body-content">
+                                                    <span class="title">ДЛЯ КОГО</span>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="javascript:void(0)">ПАРНЫЕ ОБРУЧАЛЬНЫЕ КОЛЬЦА</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">ЖЕНСКИЕ ОБРУЧАЛЬНЫЕ КОЛЬЦА</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">МУЖСКИЕ ОБРУЧАЛЬНЫЕ КОЛЬЦА</a>
+                                                        </li>
+                                                    </ul>
+                                                    <span class="title">КОЛЛЕКЦИИ</span>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="catalog-rings.html">AJOUR</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="catalog-rings.html">SPIN</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="catalog-rings.html">DOUBLE</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="catalog-rings.html">TRIPPLE</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="catalog-rings.html">CLASSIC</a>
+                                                        </li>
+                                                    </ul>
+                                                    <span class="title">ВСТАВКИ</span>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="javascript:void(0)">С БРИЛЛИАНТАМИ</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">С ЧЁРНЫМИ БРИЛЛИАНТАМИ</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">С ЦВЕТНЫМИ КАМНЯМИ</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">БЕЗ ВСТАВОК</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <div class="heading">
+                                                    <span>СМОТРИТЕ ТАКЖЕ</span>
+                                                </div>
+                                                <div class="body-content">
+                                                    <a href="javascript:void(0)" class="title">ХАРАКТЕРИСТИКИ КАМНЕЙ</a>
+                                                    <a href="javascript:void(0)" class="title">КАК ОПРЕДЛИТЬ РАЗМЕР</a>
+                                                    <a href="javascript:void(0)" class="title">И Т.П.</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="decorations">
+                                    <a href="javascript:void(0)">УКРАШЕНИЯ</a>
+                                    <ul class="sub-menu">
+                                        <li>
+                                            <div>
+                                                <div class="heading">
+                                                    <span>КОЛЬЦА</span>
+                                                    <a href="catalog.html" class="show-more">ВСЕ КОЛЬЦА</a>
+                                                </div>
+                                                <div class="body-content">
+                                                    <span class="title">ДЛЯ КОГО</span>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="javascript:void(0)">ЖЕНСКИЕ КОЛЬЦА</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">МУЖСКИЕ КОЛЬЦА</a>
+                                                        </li>
+                                                    </ul>
+                                                    <span class="title">ВСТАВКИ</span>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="javascript:void(0)">С БРИЛЛИАНТАМИ</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">С ЧЁРНЫМИ БРИЛЛИАНТАМИ</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">С ЦВЕТНЫМИ КАМНЯМИ</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">БЕЗ ВСТАВОК</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="heading">
+                                                    <span>ПОДВЕСКИ</span>
+                                                    <a href="catalog.html" class="show-more">ВСЕ ПОДВЕСКИ</a>
+                                                </div>
+                                                <div class="body-content">
+                                                    <span class="title">ВСТАВКИ</span>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="javascript:void(0)">С БРИЛЛИАНТАМИ</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">С ЦВЕТНЫМИ КАМНЯМИ</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">С ЧЁРНЫМИ БРИЛЛИАНТАМИ</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <div class="heading">
+                                                    <span>СЕРЬГИ</span>
+                                                    <a href="catalog.html" class="show-more">ВСЕ СЕРЬГИ</a>
+                                                </div>
+                                                <div class="body-content">
+                                                    <span class="title">ВСТАВКИ</span>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="javascript:void(0)">С БРИЛЛИАНТАМИ</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">С ЧЁРНЫМИ БРИЛЛИАНТАМИ</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">С ЦВЕТНЫМИ КАМНЯМИ</a>
+                                                        </li>
+                                                    </ul>
+                                                    <span class="title">СТИЛЬ</span>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="javascript:void(0)">ГВОЗДИКИ (ПУСЕТЫ)</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">КОНГО (КОЛЬЦА)</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">ДЛИННЫЕ (ВИСЯЧИЕ)</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">С АНГЛИЙСКИМ ЗАМКОМ</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">С ФРАНЦУЗСКИМ ЗАМКОМ</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <div class="heading">
+                                                    <span>СМОТРИТЕ ТАКЖЕ</span>
+                                                </div>
+                                                <div class="body-content">
+                                                    <a href="javascript:void(0)" class="title">ХАРАКТЕРИСТИКИ КАМНЕЙ</a>
+                                                    <a href="javascript:void(0)" class="title">КАК ОПРЕДЛИТЬ РАЗМЕР</a>
+                                                    <a href="javascript:void(0)" class="title">И Т.П.</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="collections">
+                                    <a href="javascript:void(0)">КОЛЛЕКЦИИ</a>
+                                    <ul class="sub-menu">
+                                        <li>
+                                            <div class="flex-wrap">
+                                                <a href="catalog-rings.html" class="item" style="background-image: url('../img/russian-seasons.jpg');">
+                                                    <span>RUSSIAN SEASONS</span>
+                                                </a>
+                                                <a href="catalog-rings.html" class="item" style="background-image: url('../img/AIR.jpg');">
+                                                    <span>AIR</span>
+                                                </a>
+                                                <a href="catalog-rings.html" class="item" style="background-image: url('../img/monpansie.jpg');">
+                                                    <span>monpansie</span>
+                                                </a>
+                                                <a href="catalog-rings.html" class="item" style="background-image: url('../img/russian-seasons.jpg');">
+                                                    <span>RUSSIAN SEASONS</span>
+                                                </a>
+                                                <a href="catalog-rings.html" class="item" style="background-image: url('../img/AIR.jpg');">
+                                                    <span>AIR</span>
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">СТУДИИ</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- end desktop menu -->
+
+                    <!-- mobile menu -->
+                    <div class="header__menu">
+                        <ul class="social__list">
+                            <li>
+                                <a href="javascript:void(0)" class="open-callBack">
+                                    <i class="icon-icon3"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <i class="icon-icon1"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <i class="icon-icon4"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="open-contacts">
+                                    <i class="icon-icon2"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <nav class="mainMenu">
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)">ИЗГОТОВЛЕНИЕ НА ЗАКАЗ</a>
+                                </li>
+                                <li class="ring_style1">
+                                    <a href="javascript:void(0)">ПОМОЛВКА И СВАДЬБА</a>
+                                    <ul>
+                                        <li class="ring_style2">
+                                            <a href="javascript:void(0)">ОБРУЧАЛЬНЫЕ КОЛЬЦА</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="javascript:void(0)">ЖЕНСКИЕ</a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0)">МУЖСКИЕ</a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0)">ПАРНЫЕ</a>
+                                                </li>
+                                                <li class="moreList">
+                                                    <div>
+                                                        <span>ВСТАВКИ</span>
+                                                        <a href="javascript:void(0)">С БРИЛЛИАНТАМИ</a>
+                                                        <a href="javascript:void(0)">С ЧЁРНЫМИ БРИЛЛИАНТАМИ</a>
+                                                        <a href="javascript:void(0)">С ЦВЕТНЫМИ КАМНЯМИ</a>
+                                                        <a href="javascript:void(0)">БЕЗ ВСТАВОК</a>
+                                                        <span>КОЛЛЕКЦИИ</span>
+                                                        <a href="javascript:void(0)">AJOUR</a>
+                                                        <a href="javascript:void(0)">SPIN</a>
+                                                        <a href="javascript:void(0)">DOUBLE</a>
+                                                        <a href="javascript:void(0)">TRIPPLE</a>
+                                                        <a href="javascript:void(0)">CLASSIC</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="ring_style2">
+                                            <a href="javascript:void(0)">ПОМОЛВОЧНЫЕ КОЛЬЦА</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="javascript:void(0)">КОЛИЧЕСТВО БРИЛЛИАНТОВ</a>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="javascript:void(0)">С ОДНИМ БРИЛЛИАНТОМ</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">С ОБСЫПКОЙ ИЗ БРИЛЛИАНТОВ</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">КОМПЛЕКТЫ С ОБРУЧАЛЬНЫМ КОЛЬЦОМ</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0)">ВСТАВКИ</a>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="javascript:void(0)">БРИЛЛИАНТЫ</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">ЦВЕТНЫЕ КАМНИ</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="moreList">
+                                            <div>
+                                                <span>СМОТРИТЕ ТАКЖЕ</span>
+                                                <a href="javascript:void(0)">ГИД ПО БРИЛЛИАНТАМ</a>
+                                                <a href="javascript:void(0)">КАК УЗНАТЬ РАЗМЕР</a>
+                                                <a href="javascript:void(0)">СЕРТИФИКАЦИЯ GIА</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="decorations">
+                                    <a href="javascript:void(0)">УКРАШЕНИЯ</a>
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:void(0)">КОЛЬЦА</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="javascript:void(0)">ДЛЯ КОГО</a>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="javascript:void(0)">ЖЕНСКИЕ КОЛЬЦА</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">МУЖСКИЕ КОЛЬЦА</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0)">ВСТАВКИ</a>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="javascript:void(0)">С БРИЛЛИАНТАМИ</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">С ЧЁРНЫМИ БРИЛЛИАНТАМИ</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">С ЦВЕТНЫМИ КАМНЯМИ</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">БЕЗ ВСТАВОК</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">ПОДВЕСКИ</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="javascript:void(0)">ВСТАВКИ</a>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="javascript:void(0)">С БРИЛЛИАНТАМИ</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">С ЦВЕТНЫМИ КАМНЯМИ</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">С ЧЁРНЫМИ БРИЛЛИАНТАМИ</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">СЕРЬГИ</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="javascript:void(0)">ВСТАВКИ</a>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="javascript:void(0)">С БРИЛЛИАНТАМИ</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">С ЧЁРНЫМИ БРИЛЛИАНТАМИ</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">С ЦВЕТНЫМИ КАМНЯМИ</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0)">СТИЛЬ</a>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="javascript:void(0)">ГВОЗДИКИ (ПУСЕТЫ)</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">КОНГО (КОЛЬЦА)</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">ДЛИННЫЕ (ВИСЯЧИЕ)</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">С АНГЛИЙСКИМ ЗАМКОМ</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">С ФРАНЦУЗСКИМ ЗАМКОМ</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">КОЛЛЕКЦИИ</a>
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:void(0)">RUSSIAN SEASONS</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">AIR</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">MONPANSIE</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">SOLAR</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">METEORS</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">ПРОИЗВОДСТВО</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">ДОСТАВКА И ОПЛАТА</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">ГАРАНТИЯ</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">ЖУРНАЛ</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- end mobile menu -->
+
+                    <!-- mobile button -->
+                    <a href="javascript:void(0)" class="header__button">КОНТАКТЫ</a>
+                    <div class="header__socials">
+                        <ul class="social__list">
+                            <li>
+                                <a href="javascript:void(0)" class="open-callBack">
+                                    <i class="icon-icon3"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <i class="icon-icon1"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <i class="icon-icon4"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="open-contacts">
+                                    <i class="icon-icon2"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- end mobile button -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="bread-crumbs">
+            <div class="container">
+                <ul>
+                    <li><a href="javascript:void(0)">ПОМОЛВКА И СВАДЬБА</a></li>
+                    <li><span>женские обручальные кольца</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="banner">
+            <div class="container">
+                <div class="wrapper" style="background-image: url(../img/catalog/catalog-rings-banner.png);">
+                    <h2><span>ОБРУЧАЛЬНЫЕ КОЛЬЦА
+                    </span> КОЛЛЕКЦИИ AJURE</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="wp-block-columns has-4-columns">
+                <div class="wp-block-column">
+                    <h3>ИЗГОТОВЛЕНИЕ ВРУЧНУЮ</h3>
+                    <p>Каждый комплект обручальных колец BENDES создаётся вручную лучшими ювелирами России на собственном производстве в Москве</p>
+                    <div class="wp-block-button"><a class="wp-block-button__link has-text-color has-dark-gray-color has-background has-white-background-color" href="фывфв">Ссылка</a></div>
+                </div>
+                <div class="wp-block-column">
+                    <h3>ИЗГОТОВЛЕНИЕ ВРУЧНУЮ</h3>
+                    <p>Каждый комплект обручальных колец BENDES создаётся вручную лучшими ювелирами России на собственном производстве в Москве</p>
+                    <div class="wp-block-button"><a class="wp-block-button__link has-text-color has-dark-gray-color has-background has-white-background-color" href="фывфв">Ссылка</a></div>
+                    <p></p>
+                </div>
+                <div class="wp-block-column">
+                    <h3>ИЗГОТОВЛЕНИЕ ВРУЧНУЮ</h3>
+                    <p>Каждый комплект обручальных колец BENDES создаётся вручную лучшими ювелирами России на собственном производстве в Москве</p>
+                    <div class="wp-block-button"><a class="wp-block-button__link has-text-color has-dark-gray-color has-background has-white-background-color" href="фывфв">Ссылка</a></div>
+
+                    <p></p>
+                </div>
+                <div class="wp-block-column">
+                    <h3>ИЗГОТОВЛЕНИЕ ВРУЧНУЮ</h3>
+                    <p>Каждый комплект обручальных колец BENDES создаётся вручную лучшими ювелирами России на собственном производстве в Москве</p>
+                    <div class="wp-block-button"><a class="wp-block-button__link has-text-color has-dark-gray-color has-background has-white-background-color" href="фывфв">Ссылка</a></div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="filtersWrap">
+            <div class="filters active">
+                <div class="filters__heading">
+                    <span class="toggle-filters">ФИЛЬТР</span>
+                    <ul class="sorting">
+                        <li>
+                            <a href="javascript:void(0)">от дешевых к дорогим</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">от дорогим к дешевым</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">популярние</a>
+                        </li>
+                        <li class="active">
+                            <a href="javascript:void(0)">новинки</a>
+                        </li>
+                    </ul>
+                    <a href="javascript:void(0)" class="reset-filters">СБРОСИТЬ ФИЛЬТР</a>
+                </div>
+                <div class="filters__body">
+                    <div class="flex-blk flex-blk-4">
+                        <div class="blk">
+                            <div class="item flex">
+                                <div class="radio-flex">
+                                    <p>МЕТАЛЛ</p>
+                                    <div class="radio-btns c-toggle">
+                                        <label for="gold" class="val1"><span>ЗОЛОТО</span></label>
+                                        <span class="radio-btns__wrapper">
+                                    <input type="radio" name="metal" id="gold" checked>
+                                    <input type="radio" name="metal" id="platinum" class="right">
+                                    <span aria-hidden="true" class="radio-btns__switcher"></span>
+                                        </span>
+                                        <label for="platinum" class="val2"><span>ПЛАТИНА</span></label>
+                                    </div>
+                                </div>
+                                <div class="radio-flex">
+                                    <p>ПРОБА</p>
+                                    <div class="radio-btns c-toggle">
+                                        <label for="585" class="val1"><span>585</span></label>
+                                        <span class="radio-btns__wrapper">
+                                    <input type="radio" name="content" id="585" checked>
+                                    <input type="radio" name="content" id="750" class="right">
+                                    <span aria-hidden="true" class="radio-btns__switcher"></span>
+                                        </span>
+                                        <label for="750" class="val2"><span>750</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <p>ДЛЯ КОГО</p>
+                                <div class="checkbox-btns flex">
+                                    <label class="wrap">
+                                        <input type="checkbox" checked="checked" name="checkbox">
+                                        <span class="checkmark"></span>
+                                        <span class="label">Парные</span>
+                                    </label>
+                                    <label class="wrap">
+                                        <input type="checkbox" checked="checked" name="checkbox">
+                                        <span class="checkmark"></span>
+                                        <span class="label">Женские</span>
+                                    </label>
+                                    <label class="wrap">
+                                        <input type="checkbox" checked="checked" name="checkbox">
+                                        <span class="checkmark"></span>
+                                        <span class="label">Мужские</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <p>ЦВЕТ МЕТАЛЛА</p>
+                            <div class="checkbox-btns">
+                                <label class="wrap">
+                                    <input type="checkbox" checked="checked" name="checkbox">
+                                    <span class="checkmark"></span>
+                                    <span class="label">Белое золото </span>
+                                </label>
+                                <label class="wrap">
+                                    <input type="checkbox" name="checkbox">
+                                    <span class="checkmark"></span>
+                                    <span class="label">Желтое золото</span>
+                                </label>
+                                <label class="wrap">
+                                    <input type="checkbox" name="checkbox">
+                                    <span class="checkmark"></span>
+                                    <span class="label">Розовое золото</span>
+                                </label>
+                                <label class="wrap">
+                                    <input type="checkbox" name="checkbox">
+                                    <span class="checkmark"></span>
+                                    <span class="label">Комбинированное золото</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <p>ВСТАВКИ</p>
+                            <div class="checkbox-btns">
+                                <label class="wrap">
+                                    <input type="checkbox" checked="checked" name="checkbox">
+                                    <span class="checkmark"></span>
+                                    <span class="label">Бриллианты</span>
+                                </label>
+                                <label class="wrap">
+                                    <input type="checkbox" name="checkbox">
+                                    <span class="checkmark"></span>
+                                    <span class="label">Чёрные бриллианты</span>
+                                </label>
+                                <label class="wrap">
+                                    <input type="checkbox" name="checkbox">
+                                    <span class="checkmark"></span>
+                                    <span class="label">Цветные камни</span>
+                                </label>
+                                <label class="wrap">
+                                    <input type="checkbox" name="checkbox">
+                                    <span class="checkmark"></span>
+                                    <span class="label">Без вставок</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <p>КОЛИЧЕСТВО КАМНЕЙ</p>
+                            <div class="checkbox-btns">
+                                <label class="wrap">
+                                    <input type="checkbox" checked="checked" name="checkbox">
+                                    <span class="checkmark"></span>
+                                    <span class="label">Один центральный камень</span>
+                                </label>
+                                <label class="wrap">
+                                    <input type="checkbox" name="checkbox">
+                                    <span class="checkmark"></span>
+                                    <span class="label">Центральный камень и россыпь</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-blk flex-blk-3">
+                        <div class="blk">
+                            <div class="item">
+                                <p>ХАРАКТЕРИСТИКИ МЕЛКИХ КАМНЕЙ</p>
+                                <div class="radio-text">
+                                    <p>ЦВЕТ/ЧИСТОТА</p>
+                                    <div class="btns">
+                                        <label class="wrap">
+                                            <input type="radio" checked="checked" name="radioBtn">
+                                            <span class="label">2/3</span>
+                                        </label>
+                                        <label class="wrap">
+                                            <input type="radio" name="radioBtn">
+                                            <span class="label">3/4</span>
+                                        </label>
+                                        <label class="wrap">
+                                            <input type="radio" name="radioBtn">
+                                            <span class="label">4/5</span>
+                                        </label>
+                                        <label class="wrap">
+                                            <input type="radio" name="radioBtn">
+                                            <span class="label">5/6</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <p>ХАРАКТЕРИСТИКИ ЦЕНТРАЛЬНОГО КАМНЯ</p>
+                                <div class="radio-text">
+                                    <p>ЦВЕТ</p>
+                                    <div class="btns">
+                                        <label class="wrap">
+                                            <input type="radio" checked="checked" name="radioBtn-2">
+                                            <span class="label">E</span>
+                                        </label>
+                                        <label class="wrap">
+                                            <input type="radio" name="radioBtn-2">
+                                            <span class="label">F</span>
+                                        </label>
+                                        <label class="wrap">
+                                            <input type="radio" name="radioBtn-2">
+                                            <span class="label">G</span>
+                                        </label>
+                                        <label class="wrap">
+                                            <input type="radio" name="radioBtn-2">
+                                            <span class="label">H</span>
+                                        </label>
+                                        <label class="wrap">
+                                            <input type="radio" name="radioBtn-2">
+                                            <span class="label">I</span>
+                                        </label>
+                                        <label class="wrap">
+                                            <input type="radio" name="radioBtn-2">
+                                            <span class="label">J</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="radio-text">
+                                    <p>ЧИСТОТА</p>
+                                    <div class="btns">
+                                        <label class="wrap">
+                                            <input type="radio" checked="checked" name="radioBtn-3">
+                                            <span class="label">VVS2</span>
+                                        </label>
+                                        <label class="wrap">
+                                            <input type="radio" name="radioBtn-3">
+                                            <span class="label">VS1</span>
+                                        </label>
+                                        <label class="wrap">
+                                            <input type="radio" name="radioBtn-3">
+                                            <span class="label">VS2</span>
+                                        </label>
+                                        <label class="wrap">
+                                            <input type="radio" name="radioBtn-3">
+                                            <span class="label">SI1</span>
+                                        </label>
+                                        <label class="wrap">
+                                            <input type="radio" name="radioBtn-3">
+                                            <span class="label">SI2</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blk order2">
+                            <div class="info-msg">
+                                <p>Стоимость изделий с другими характеристиками вы можете уточнить обратившись к менеджеру </p>
+                            </div>
+                            <div class="info-blk">
+                                <a href="javascript:void(0)">Узнайте подробнее, что означают
+                            характеристики бриллиантов</a>
+                            </div>
+                        </div>
+                        <div class="item order3">
+                            <p>ОГРАНКА ЦЕНТРАЛЬНОГО КАМНЯ</p>
+                            <div class="checkbox-imgs">
+                                <label class="wrap">
+                                    <input type="checkbox" checked="checked" name="checkbox">
+                                    <span class="label"><i class="icon-princess_front"></i></span>
+                                </label>
+                                <label class="wrap">
+                                    <input type="checkbox" name="checkbox">
+                                    <span class="checkmark"></span>
+                                    <span class="label"><i class="icon-marquise_front"></i></span>
+                                </label>
+                                <label class="wrap">
+                                    <input type="checkbox" name="checkbox">
+                                    <span class="checkmark"></span>
+                                    <span class="label"><i class="icon-cushion_front"></i></span>
+                                </label>
+                                <label class="wrap">
+                                    <input type="checkbox" name="checkbox">
+                                    <span class="checkmark"></span>
+                                    <span class="label"><i class="icon-pear_front"></i></span>
+                                </label>
+                                <label class="wrap">
+                                    <input type="checkbox" name="checkbox">
+                                    <span class="checkmark"></span>
+                                    <span class="label"><i class="icon-emerald_front"></i></span>
+                                </label>
+                                <label class="wrap">
+                                    <input type="checkbox" name="checkbox">
+                                    <span class="checkmark"></span>
+                                    <span class="label"><i class="icon-baguette_front"></i></span>
+                                </label>
+                                <label class="wrap">
+                                    <input type="checkbox" name="checkbox">
+                                    <span class="checkmark"></span>
+                                    <span class="label"><i class="icon-round_front"></i></span>
+                                </label>
+                                <label class="wrap">
+                                    <input type="checkbox" name="checkbox">
+                                    <span class="checkmark"></span>
+                                    <span class="label"><i class="icon-assher_front"></i></span>
+                                </label>
+                                <label class="wrap">
+                                    <input type="checkbox" name="checkbox">
+                                    <span class="checkmark"></span>
+                                    <span class="label"><i class="icon-radiant_front"></i></span>
+                                </label>
+                                <label class="wrap">
+                                    <input type="checkbox" name="checkbox">
+                                    <span class="checkmark"></span>
+                                    <span class="label"><i class="icon-oval_front"></i></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-msg center flex-blk-1">
+                        <p>Цены будут указаны для варианта исполнения в золоте 585 пробы с россыпью бриллиантов 2/3 и центральным бриллиантом G/VS1</p>
+                    </div>
+                    <div class="apply-filters flex-blk-1">
+                        <a href="javascript:void(0)" class="reset-filters">СБРОСИТЬ ФИЛЬТР</a>
+                        <a href="javascript:void(0)">ПРИМЕНИТЬ ФИЛЬТР</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <section class="catalog">
+            <div class="container">
+                <div class="catalog__wrapper clearfix">
+                    <div class="row no-flex">
+                        <div class="item large left">
+                            <a href="single-product.html"></a>
+                            <div class="item__img">
+                                <img src="../img/ringImg.png" alt="">
+                            </div>
+                            <div class="item__price">
+                                <p>108 000 <span>₽</span></p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a href="single-product.html"></a>
+                            <div class="item__img">
+                                <img src="../img/ringImg.png" alt="">
+                            </div>
+                            <div class="item__price">
+                                <p>108 000 <span>₽</span></p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a href="single-product.html"></a>
+                            <div class="item__img">
+                                <img src="../img/ringImg.png" alt="">
+                            </div>
+                            <div class="item__price">
+                                <p>108 000 <span>₽</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="item">
+                            <a href="single-product.html"></a>
+                            <div class="item__img">
+                                <img src="../img/ringImg.png" alt="">
+                            </div>
+                            <div class="item__price">
+                                <p>108 000 <span>₽</span></p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a href="single-product.html"></a>
+                            <div class="item__img">
+                                <img src="../img/ringImg.png" alt="">
+                            </div>
+                            <div class="item__price">
+                                <p>108 000 <span>₽</span></p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a href="single-product.html"></a>
+                            <div class="item__img">
+                                <img src="../img/ringImg.png" alt="">
+                            </div>
+                            <div class="item__price">
+                                <p>108 000 <span>₽</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row no-flex">
+                        <div class="item large right">
+                            <a href="single-product.html"></a>
+                            <div class="item__img">
+                                <img src="../img/ringImg.png" alt="">
+                            </div>
+                            <div class="item__price">
+                                <p>108 000 <span>₽</span></p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a href="single-product.html"></a>
+                            <div class="item__img">
+                                <img src="../img/ringImg.png" alt="">
+                            </div>
+                            <div class="item__price">
+                                <p>108 000 <span>₽</span></p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a href="single-product.html"></a>
+                            <div class="item__img">
+                                <img src="../img/ringImg.png" alt="">
+                            </div>
+                            <div class="item__price">
+                                <p>108 000 <span>₽</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="item">
+                            <a href="single-product.html"></a>
+                            <div class="item__img">
+                                <img src="../img/ringImg.png" alt="">
+                            </div>
+                            <div class="item__price">
+                                <p>108 000 <span>₽</span></p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a href="single-product.html"></a>
+                            <div class="item__img">
+                                <img src="../img/ringImg.png" alt="">
+                            </div>
+                            <div class="item__price">
+                                <p>108 000 <span>₽</span></p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a href="single-product.html"></a>
+                            <div class="item__img">
+                                <img src="../img/ringImg.png" alt="">
+                            </div>
+                            <div class="item__price">
+                                <p>108 000 <span>₽</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="javascript:void(0)" class="show-more">ПОКАЗАТЬ ЕЩЁ</a>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="container">
+            <h3>ОТКРОЙТЕ ДЛЯ СЕБЯ
+            ДРУГИЕ КОЛЛЕКЦИИ </h3>
+            <h3>ОБРУЧАЛЬНЫХ КОЛЕЦ BENDES</h3>
+            <div class="collection__wrapper">
+                <div class="item">
+                    <div class="wp-block-image image-title">
+                        <figure class="alignright">
+                            <a href="javascript:void(0)"></a>
+                            <img src="../img/category2.png" alt="" class="wp-image-123">
+
+                            <figcaption>
+                                <strong>DOUBLE</strong>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="wp-block-image image-title">
+                        <figure class="alignright">
+                            <a href="javascript:void(0)"></a>
+                            <img src="../img/category2.png" alt="" class="wp-image-123">
+
+                            <figcaption>
+                                <strong>SPIN</strong>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="wp-block-image image-title">
+                        <figure class="alignright">
+                            <a href="javascript:void(0)"></a>
+                            <img src="../img/category2.png" alt="" class="wp-image-123">
+
+                            <figcaption>
+                                <strong>DOUBLE</strong>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="wp-block-image image-title">
+                        <figure class="alignright">
+                            <a href="javascript:void(0)"></a>
+                            <img src="../img/category2.png" alt="" class="wp-image-123">
+
+                            <figcaption>
+                                <strong>SPIN</strong>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="wp-block-image image-title">
+                        <figure class="alignright">
+                            <a href="javascript:void(0)"></a>
+                            <img src="../img/category2.png" alt="" class="wp-image-123">
+
+                            <figcaption>
+                                <strong>DOUBLE</strong>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="wp-block-image image-title">
+                        <figure class="alignright">
+                            <a href="javascript:void(0)"></a>
+                            <img src="../img/category2.png" alt="" class="wp-image-123">
+
+                            <figcaption>
+                                <strong>SPIN</strong>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <srction class="info-blk">
+            <div class="container">
+                <div class="wrapper">
+                    <h3>НЕ НАШЛИ ПОДХОДЯЩУЮ МОДЕЛЬ КОЛЬЦА?</h3>
+                    <p>Бесплатно создадим для вас уникальное кольцо с индивидуальным дизайном, которое будет только у вас</p>
+                    <a href="javascript:void(0)">ПОЛУЧИТЬ БЕСПЛАТНЫЙ ЭСКИЗ <i class="icon-icon8"></i></a>
+                </div>
+            </div>
+        </srction>
+
+        <div class="lastPosts">
+            <div class="container">
+                <div class="singlePost">
+                    <div class="flex-wrap">
+                        <div class="img_blk">
+                            <figure>
+                                <img src="../img/catalog/post-img1.png" alt="">
+                            </figure>
+                        </div>
+                        <div class="text_blk">
+                            <h3>Изготовление женских обручальных колец на заказ</h3>
+                            <p>BENDES — это ювелирная дизайн-студия в Москве, которая дарит Вам возможность покупать эксклюзивные украшения. На протяжении нескольких лет наша компания воплощает в реальность желания своих покупателей. </p>
+
+                            <p>Все это время мы упорно трудимся и движемся к совершенству, чтобы каждый клиент мог приобрести у нас то эксклюзивное ювелирное украшение, о котором он мечтал.</p>
+                            <!-- <div class="read-more">
+                            <a href="javascript:void(0)">подробнее</a>
+                        </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="singlePost">
+                    <div class="flex-wrap">
+                        <div class="text_blk">
+                            <h3>Изготовление женских обручальных колец на заказ</h3>
+                            <p>BENDES — это ювелирная дизайн-студия в Москве, которая дарит Вам возможность покупать эксклюзивные украшения. На протяжении нескольких лет наша компания воплощает в реальность желания своих покупателей. </p>
+
+                            <p>Все это время мы упорно трудимся и движемся к совершенству, чтобы каждый клиент мог приобрести у нас то эксклюзивное ювелирное украшение, о котором он мечтал.</p>
+                            <!-- <div class="read-more">
+                            <a href="javascript:void(0)">подробнее</a>
+                        </div> -->
+                        </div>
+                        <div class="img_blk">
+                            <figure>
+                                <img src="../img/catalog/post-img2.png" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="multiPosts">
+                    <div class="wrapper">
+                        <div class="post">
+                            <div class="text_blk">
+                                <h3>Изготовление женских обручальных колец на заказ</h3>
+                                <p>BENDES — это ювелирная дизайн-студия в Москве, которая дарит Вам возможность покупать эксклюзивные украшения. На протяжении нескольких лет наша компания воплощает в реальность желания своих покупателей. </p>
+
+                                <p>Все это время мы упорно трудимся и движемся к совершенству, чтобы каждый клиент мог приобрести у нас то эксклюзивное ювелирное украшение, о котором он мечтал.</p>
+                                <!-- <div class="read-more">
+                                <a href="javascript:void(0)">подробнее</a>
+                            </div> -->
+                            </div>
+                        </div>
+                        <div class="post">
+                            <div class="text_blk">
+                                <h3>Изготовление женских обручальных колец на заказ</h3>
+                                <p>BENDES — это ювелирная дизайн-студия в Москве, которая дарит Вам возможность покупать эксклюзивные украшения. На протяжении нескольких лет наша компания воплощает в реальность желания своих покупателей. </p>
+
+                                <p>Все это время мы упорно трудимся и движемся к совершенству, чтобы каждый клиент мог приобрести у нас то эксклюзивное ювелирное украшение, о котором он мечтал.</p>
+                                <!-- <div class="read-more">
+                                <a href="javascript:void(0)">подробнее</a>
+                            </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="flex-wrap">
+                <div class="item">
+                    <a href="index.html" class="footer__logo">
+                        <img src="../img/logo-white.png" alt="logo">
+                    </a>
+                    <ul class="footer__socials">
+                        <li>
+                            <a href="javascript:void(0)">
+                                <i class="icon-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <i class="icon-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <i class="icon-vkontakte"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <span class="title">Юридическая информация</span>
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)">Лицензии и сертификаты</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Реквизиты</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Политика конфиденциальности</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Договор-оферта</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <span class="title">О BENDES</span>
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)">Для прессы</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Работа в BENDES</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Ювелирное производство</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <span class="title">Покупателям</span>
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)">Доставка и оплата</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Изготовление на заказ</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Пожизненная гарантия</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Часто задаваемые вопросы</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <p class="copyright">
+                        © BENDES studio 2013 – 2019
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery.slinky.min.js"></script>
+
+    <script src="../js/script.min.js"></script>
+    <script src="../js/catalog.min.js"></script>
+</body>
+
+</html>

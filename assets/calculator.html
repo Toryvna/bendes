@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/calculator.css">
+</head>
+<body>
+
+<!-- build:section layout.popups-->
+<!-- /build -->
+
+<!-- build:section layout.header_home-->
+<!-- /build -->
+
+<div class="calculator">
+    <div class="calculator__heading">
+        <div class="container">
+            <h2>КАЛЬКУЛЯТОР РАСЧЁТА СТОИМОСТИ ИЗДЕЛИЙ</h2>
+            <div class="includeProduct">
+                <p>Подгрузить характеристики изделия с сайта</p>
+                <input type="text">
+                <button>ПОИСК</button>
+            </div>
+            <p class="msg">Изделие не найдено! Убедитесь, что правильно ввели артикул!</p>
+            <p class="error-msg">Изделие найдено и его характеристики добавлены в калькулятор!</p>
+        </div>
+    </div>
+    <div class="calculator__firstInfo">
+        <div class="container">
+            <div class="flex-wrap">
+                <div class="calculator__options">
+                    <div class="heading-flex">
+                        <h3>ПАРАМЕТРЫ ИЗДЕЛИЯ</h3>
+                        <a href="javascript:void(0)" class="resetBtn">СБРОСИТЬ ВСЁ</a>
+                    </div>
+                    <div class="item">
+                        <div class="radio-text">
+                            <p>Тип изделия</p>
+                            <div class="btns">
+                                <label class="wrap">
+                                    <input type="radio" checked="checked" name="radioBtn-1">
+                                    <span class="label">Кольцо</span>
+                                </label>
+                                <label class="wrap">
+                                    <input type="radio" name="radioBtn-1">
+                                    <span class="label">Серьги</span>
+                                </label>
+                                <label class="wrap">
+                                    <input type="radio" name="radioBtn-1">
+                                    <span class="label">Подвеска</span>
+                                </label>
+                                <label class="wrap">
+                                    <input type="radio" name="radioBtn-1">
+                                    <span class="label">Браслет</span>
+                                </label>
+                                <label class="wrap">
+                                    <input type="radio" name="radioBtn-1">
+                                    <span class="label">Запонки</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="radio-text">
+                            <p>Металл</p>
+                            <div class="btns">
+                                <label class="wrap">
+                                    <input type="radio" checked="checked" name="radioBtn-2">
+                                    <span class="label">Золото</span>
+                                </label>
+                                <label class="wrap">
+                                    <input type="radio" name="radioBtn-2">
+                                    <span class="label">Платина</span>
+                                </label>
+                                <label class="wrap">
+                                    <input type="radio" name="radioBtn-2">
+                                    <span class="label">Серебро</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="radio-text">
+                            <p>Проба</p>
+                            <div class="btns">
+                                <label class="wrap">
+                                    <input type="radio" checked="checked" name="radioBtn-3">
+                                    <span class="label">585</span>
+                                </label>
+                                <label class="wrap">
+                                    <input type="radio" name="radioBtn-3">
+                                    <span class="label">750</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="radio-text">
+                            <p>Сложность</p>
+                            <div class="btns">
+                                <label class="wrap">
+                                    <input type="radio" checked="checked" name="radioBtn-4">
+                                    <span class="label">Базовая</span>
+                                </label>
+                                <label class="wrap">
+                                    <input type="radio" name="radioBtn-4">
+                                    <span class="label">Уровень 1</span>
+                                </label>
+                                <label class="wrap">
+                                    <input type="radio" name="radioBtn-4">
+                                    <span class="label">Уровень 2</span>
+                                </label>
+                                <label class="wrap">
+                                    <input type="radio" name="radioBtn-4">
+                                    <span class="label">Уровень 3</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="input-text">
+                            <p>Вес металла</p>
+                            <input type="number" placeholder="0.00 грамм">
+                        </div>
+                    </div>
+                </div>
+                <div class="calculator__weight">
+                    <h3>РАСЧЁТ ВЕСА КОЛЬЦА ПО РАЗМЕРАМ</h3>
+                    <div class="input-wrap">
+                        <input type="number" placeholder="Размер">
+                        <input type="number" placeholder="Ширина кольца">
+                        <input type="number" placeholder="Ширина торца">
+                    </div>
+                    <h4>СЕЧЕНИЕ</h4>
+                    <div class="text-wrap">
+                        <p>Прямоугольное сечение</p>
+                        <span class="value">0.00 грамм</span>
+                        <a href="javascript:void(0)" class="setValue">ПОДСТАВИТЬ</a>
+                    </div>
+                    <div class="text-wrap">
+                        <p>Полукруглое сечение</p>
+                        <span class="value">0.00 грамм</span>
+                        <a href="javascript:void(0)" class="setValue">ПОДСТАВИТЬ</a>
+                    </div>
+                    <div class="text-wrap">
+                        <p>Круглое сечение</p>
+                        <span class="value">0.00 грамм</span>
+                        <a href="javascript:void(0)" class="setValue">ПОДСТАВИТЬ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="calculator__inserts">
+        <div class="container">
+            <h3>ВСТАВКИ</h3>
+            <div class="calculator__inserts-first">
+                <div class="heading-flex">
+                    <h4>МАЛЕНЬКИЕ КАМНИ</h4>
+                    <a href="javascript:void(0)" class="resetBtn">СБРОСИТЬ</a>
+                </div>
+                <div class="checkbox-btns">
+                    <p>Поставщики</p>
+                    <label class="wrap">
+                        <input type="radio" checked="checked" name="radioBtn-5">
+                        <span class="checkmark"></span>
+                        <span class="label">Diamond Club</span>
+                    </label>
+                    <label class="wrap">
+                        <input type="radio" name="radioBtn-5">
+                        <span class="checkmark"></span>
+                        <span class="label">Рапапорт</span>
+                    </label>
+                </div>
+                <div class="table">
+                    <div class="row heading">
+                        <div class="cell">
+                            <h4>КАМЕНЬ</h4>
+                        </div>
+                        <div class="cell">
+                            <h4>ОГРАНКА</h4>
+                        </div>
+                        <div class="cell">
+                            <h4>ЦВЕТ/ЧИСТОТА</h4>
+                        </div>
+                        <div class="cell">
+                            <h4>РАЗМЕР</h4>
+                        </div>
+                        <div class="cell">
+                            <h4>КОЛИЧЕСТВО</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="cell">
+                            <h4>КАМЕНЬ</h4>
+                            <div class="select large">
+                                <select 
+                                data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'>
+                                    <option>Чёрный бриллиант</option>
+                                    <option>Бриллиант</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <h4>ОГРАНКА</h4>
+                            <div class="select large">
+                                <select 
+                                data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'>
+                                    <option>Круг</option>
+                                    <option>Круг</option>
+                                    <option>Груша</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <h4>ЦВЕТ/ЧИСТОТА</h4>
+                            <div class="select large">
+                                <span class="notApplicable">Неприменимо</span>
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <h4>РАЗМЕР</h4>
+                            <div class="select">
+                                <select 
+                                data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'>
+                                    <option>1</option>
+                                    <option>1.5</option>
+                                    <option>2.5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <h4>КОЛИЧЕСТВО</h4>
+    
+                            <div class="inc_dec-btns">
+                                <div class="dec inc_dec_btn"></div>
+                                <div class="inc inc_dec_btn"></div>
+                                <input type="number" value="1">
+                            </div>
+                            <div class="actions">
+                                <a href="javascript:void(0)" class="copy"><i class="icon-copy"></i></a>
+                                <a href="javascript:void(0)" class="delete"><i class="icon-trash-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="cell">
+                            <h4>КАМЕНЬ</h4>
+                            <div class="select large">
+                                <select 
+                                data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'>
+                                    <option>Бриллиант</option>
+                                    <option>Чёрный бриллиант</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <h4>ОГРАНКА</h4>
+                            <div class="select large">
+                                <select 
+                                data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'> 
+                                    <option>Груша</option>
+                                    <option>Круг</option>
+                                    <option>Круг</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <h4>ЦВЕТ/ЧИСТОТА</h4>
+                            <div class="select large">
+                                <select 
+                                data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'>
+                                    <option>3/4</option>
+                                    <option>3/7</option>
+                                    <option>5/6</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <h4>РАЗМЕР</h4>
+                            <div class="select">
+                                <select 
+                                data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'>
+                                    <option>3.0х5.4</option>
+                                    <option>3.0х5.6</option>
+                                    <option>2.0х5.4</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <h4>КОЛИЧЕСТВО</h4>
+    
+                            <div class="inc_dec-btns">
+                                <div class="dec inc_dec_btn"></div>
+                                <div class="inc inc_dec_btn"></div>
+                                <input type="number" id="quantityOfGoods" value="1">
+                            </div>
+                            <div class="actions">
+                                <a href="javascript:void(0)" class="copy"><i class="icon-copy"></i></a>
+                                <a href="javascript:void(0)" class="delete"><i class="icon-trash-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="javascript:void(0)" class="addRow"><span class="plus"></span>ДОБАВИТЬ НОВЫЙ</a>
+                </div>
+            </div>
+
+            <div class="calculator__inserts-second">
+                <div class="heading-flex">
+                    <h4>КРУПНЫЕ КАМНИ</h4>
+                    <a href="javascript:void(0)" class="resetBtn">СБРОСИТЬ</a>
+                </div>
+                <div class="checkbox-btns">
+                    <p>Поставщики</p>
+                    <label class="wrap">
+                        <input type="radio" checked="checked" name="radioBtn-6">
+                        <span class="checkmark"></span>
+                        <span class="label">Diamond Club</span>
+                    </label>
+                    <label class="wrap">
+                        <input type="radio" name="radioBtn-6">
+                        <span class="checkmark"></span>
+                        <span class="label">Рапапорт</span>
+                    </label>
+                </div>
+                <div class="table">
+                    <div class="row heading">
+                        <div class="cell">
+                            <h4>КАМЕНЬ</h4>
+                        </div>
+                        <div class="cell">
+                            <h4>ОГРАНКА</h4>
+                        </div>
+                        <div class="cell">
+                            <h4>ЦВЕТ</h4>
+                        </div>
+                        <div class="cell">
+                            <h4>ЧИСТОТА</h4>
+                        </div>
+                        <div class="cell">
+                            <h4>ВЕС</h4>
+                        </div>
+                    </div>
+                    <div class="row error">
+                        <div class="cell">
+                            <h4>КАМЕНЬ</h4>
+                            <div class="select large">
+                                <select 
+                                data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'>
+                                    <option>Чёрный бриллиант</option>
+                                    <option>Бриллиант</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <h4>ОГРАНКА</h4>
+                            <div class="select large">
+                                <select 
+                                data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'>
+                                    <option>Круг</option>
+                                    <option>Круг</option>
+                                    <option>Груша</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <h4>ЦВЕТ</h4>
+                            <div class="select large">
+                                <span class="notApplicable">Неприменимо</span>
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <h4>ЧИСТОТА</h4>
+                            <div class="select">
+                                <span class="notApplicable">Неприменимо</span>
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <h4>ВЕС</h4>
+    
+                            <div class="weight">
+                                <input type="number" value="0.50" step="0.01" max="1.5">
+                            </div>
+                            <div class="actions">
+                                <a href="javascript:void(0)" class="copy"><i class="icon-copy"></i></a>
+                            </div>
+                        </div>
+                        <span class="error-text">Максимальный вес для этого камня в прайс-листе 1.5 карат! Расчёт будет выполнен по ценам на 1.5 карат!</span>
+                    </div>
+                    <div class="row">
+                        <div class="cell">
+                            <h4>КАМЕНЬ</h4>
+                            <div class="select large">
+                                <select 
+                                data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'>
+                                    <option>Бриллиант</option>
+                                    <option>Чёрный бриллиант</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <h4>ОГРАНКА</h4>
+                            <div class="select large">
+                                <select 
+                                data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'> 
+                                    <option>Груша</option>
+                                    <option>Круг</option>
+                                    <option>Круг</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <h4>ЦВЕТ</h4>
+                            <div class="select large">
+                                <select 
+                                data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'>
+                                    <option>3/4</option>
+                                    <option>3/7</option>
+                                    <option>5/6</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <h4>ЧИСТОТА</h4>
+                            <div class="select large">
+                                <select 
+                                data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'>
+                                    <option>S12</option>
+                                    <option>S13</option>
+                                    <option>S14</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <h4>ВЕС</h4>
+    
+                            <div class="weight">
+                                <input type="number" value="0.50" step="0.01" max="1.5">
+                            </div>
+                            <div class="actions">
+                                <a href="javascript:void(0)" class="copy"><i class="icon-copy"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="javascript:void(0)" class="addRow"><span class="plus"></span>ДОБАВИТЬ НОВЫЙ</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="separator"></div>
+    <div class="submitBlk">
+        <div class="container">
+            <button>РАСЧИТАТЬ СТОИМОСТЬ</button>
+            <span class="error-text">Вы добавили маленькие камни, но не указали их количество! Вы добавили крупные камни, но не указали их вес!</span>
+        </div>
+    </div>
+    <div class="calculator__cost">
+        <div class="container">
+            <div class="flex-wrap">
+                <div class="costBlk">
+                    <h3>СТОИМОСТЬ</h3>
+                    <div class="parametersList">
+                        <div class="row">
+                            <div class="cell"><p>Золото (585)</p></div>
+                            <div class="cell"><span>20 500 ₽</span></div>
+                        </div>
+                        <div class="row">
+                            <div class="cell"><p>Маленькие камни</p></div>
+                            <div class="cell"><span>20 000 ₽</span><a href="javasript:void(0)" class="showAll"></a></div>
+                            <div class="hiddenInfo">
+                                <div class="row">
+                                    <div class="cell"><p>Чёрный бриллиант</p></div>
+                                    <div class="cell"><span>5 000 ₽</span></div>
+                                </div>
+                                <div class="row">
+                                    <div class="cell"><p>Бриллиант</p></div>
+                                    <div class="cell"><span>15 000 ₽</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="cell"><p>Крупные камни</p></div>
+                            <div class="cell"><span>40 000 ₽</span><a href="javasript:void(0)" class="showAll"></a></div>
+                            <div class="hiddenInfo">
+                                <div class="row">
+                                    <div class="cell"><p>Чёрный бриллиант</p></div>
+                                    <div class="cell"><span>5 000 ₽</span></div>
+                                </div>
+                                <div class="row">
+                                    <div class="cell"><p>Бриллиант</p></div>
+                                    <div class="cell"><span>15 000 ₽</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result">
+                        <div class="row">
+                            <div class="cell"><p>Итого</p></div>
+                            <div class="cell"><span>80 500 ₽</span></div>
+                        </div>
+                    </div>
+                    <div class="radio-btns">
+                        <label for="percent" class="val1"><span>Процент</span></label>
+                        <span class="radio-btns__wrapper">
+                            <input type="radio" name="metal" id="percent" checked>
+                            <input type="radio" name="metal" id="sum" class="right">
+                            <span aria-hidden="true" class="radio-btns__switcher"></span>
+                        </span>
+                        <label for="sum" class="val2"><span>Сумма</span></label>
+                    </div>
+                    <input type="text" placeholder="0%" class="viewPrice">
+                    <div class="addBtn">
+                        <button>ДОБАВИТЬ К ЗАКАЗУ</button>
+                    </div>
+                    <a href="javascript:void(0)" class="showOptions">ПОКАЗАТЬ ТЕХНИЧЕСКИЕ ПАРАМЕТРЫ ЗАКАЗА</a>
+                    <div class="primeCost">
+                        <div class="heading">
+                            <h3>СЕБЕСТОИМОСТЬ</h3>
+                            <a href="javascript:void(0)" class="hideBlk">СКРЫТЬ</a>
+                        </div>
+                        <div class="parametersList">
+                            <div class="row">
+                                <div class="cell"><p>Золото (585)</p></div>
+                                <div class="cell"><span>20 500 ₽</span></div>
+                            </div>
+                            <div class="row">
+                                <div class="cell"><p>Золото (585)</p></div>
+                                <div class="cell"><span>20 500 ₽</span><a href="javasript:void(0)" class="showAll active"></a></div>
+                                <div class="hiddenInfo active">
+                                    <div class="row">
+                                        <div class="cell"><p>Металл</p></div>
+                                        <div class="cell"><span>7 000 ₽</span></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="cell"><p>Литьё</p></div>
+                                        <div class="cell"><span>2 000 ₽</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="cell"><p>Маленькие камни</p></div>
+                                <div class="cell"><span>20 000 ₽</span><a href="javasript:void(0)" class="showAll active"></a></div>
+                                <div class="hiddenInfo active">
+                                    <div class="row">
+                                        <div class="cell"><p>Чёрный бриллиант</p></div>
+                                        <div class="cell"><span>1 000 ₽</span></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="cell"><p>Бриллиант</p></div>
+                                        <div class="cell"><span>7 000 ₽</span></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="cell"><p>Закрепка камней</p></div>
+                                        <div class="cell"><span>3 000 ₽</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="cell"><p>Крупные камни</p></div>
+                                <div class="cell"><span>20 000 ₽</span><a href="javasript:void(0)" class="showAll active"></a></div>
+                                <div class="hiddenInfo active">
+                                    <div class="row">
+                                        <div class="cell"><p>Чёрный бриллиант</p></div>
+                                        <div class="cell"><span>11 000 ₽</span></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="cell"><p>Закрепка камней</p></div>
+                                        <div class="cell"><span>2 500 ₽</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="result">
+                            <div class="row">
+                                <div class="cell"><p>Итого</p></div>
+                                <div class="cell"><span>80 500 ₽</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="imgsBlk">
+                    <div id="imgs-wrap" class="imgs-wrap"></div>
+                    <h3>ДОБАВИТЬ ФОТО ИЛИ ЭСКИЗ МОДЕЛИ</h3>
+                    <h4>ПОИСК ПО МОДЕЛЯМ НА САЙТЕ</h4>
+                    <div class="vendorCode">
+                        <input type="text" placeholder="Артикул">
+                        <button>НАЙТИ</button>
+                    </div>
+                    <h4>ЗАГРУЗИТЬ ЭСКИЗЫ</h4>
+                    <div class="input-file">
+                        <input type="file" name="file" id="file" class="inputfile" accept="image/x-png,image/gif,image/jpeg" multiple>
+                        <label for="file">
+                            <span class="uploadTitle"><i class="icon-cloud-upload"></i> ВЫБРАТЬ ФАЙЛ</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<!-- build:section layout.footer-->
+<!-- /build -->
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/jcf.min.js"></script>
+<script src="../js/jcf.select.min.js"></script>
+
+<script src="../js/jquery.slinky.min.js"></script>
+
+<script src="../js/script.min.js"></script>
+<script src="../js/calculator.min.js"></script>
+
+</body>
+</html>

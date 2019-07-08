@@ -1,0 +1,92 @@
+.wp-block-image {
+    padding: 0 15px;
+    margin: 0 -15px;
+    &.image-title{
+        position: relative;
+        &::after {
+            content: "";
+            width: calc(92% - 25px);
+            height: 100%;
+            top: 6px;
+            left: 20px;
+            border-radius: 2px;
+            background-color: #FDE8D3;
+            position: absolute;
+            z-index: -1;
+        }
+        figure{
+            img{
+                display: block;
+                width: 92%;
+                box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+                border-radius: 2px;
+            }
+        }
+        figcaption{
+            position: absolute;
+            -moz-transform: rotate(90deg) translate(50%, 0%);
+            -ms-transform: rotate(90deg) translate(50%, 0%);
+            -webkit-transform: rotate(90deg) translate(50%, 0%);
+            -o-transform: rotate(90deg) translate(50%, 0%);
+            transform: rotate(90deg) translate(50%, 0%);
+            z-index: 1;
+            right: -90px;
+            top: -35px;
+            width: 230px;
+            &>*{
+                color: #000000;
+                font-size: 18px;
+                font-family: "BendesSansRegular";
+            }
+        }
+    }
+}
+@media screen and (min-width: 375px){
+    .wp-block-image{
+        padding: 0 20px;
+        margin: 0 -20px;
+        &.image-title{
+            &::after {
+                width: calc(92% - 40px);
+                left: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    .wp-block-image{
+        &.image-title {
+            figcaption{
+                right: -70px;
+                top: 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1320px){
+    .wp-block-image{
+        &.image-title {
+            figcaption{
+                right: -115px;
+                width: 380px;
+                &>*{
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1420px){
+    .wp-block-image{
+        margin: 0;
+        padding: 0;
+        &.image-title{
+            &::after {
+                width: calc(92% - 20px);
+            }
+        }
+    }
+}
