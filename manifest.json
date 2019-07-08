@@ -1,0 +1,20 @@
+{
+	"short_name": "BENDES",
+	"name": "BENDES studio",
+	"icons": [
+	{
+		"src": "favicon-196x196.png",
+		"type": "image/png",
+		"sizes": "192x192"
+	},
+	{
+		"src": "favicon-512x512.png",
+		"type": "image/png",
+		"sizes": "512x512"
+	}
+	],
+	"start_url": "/",
+	"background_color": "#FFFFFF",
+	"display": "browser",
+	"theme_color": "#FFFFFF"
+}
