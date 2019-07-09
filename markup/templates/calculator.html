@@ -826,7 +826,7 @@
                     <div class="calculator__options">
                         <div class="heading-flex">
                             <h3>ПАРАМЕТРЫ ИЗДЕЛИЯ</h3>
-                            <a href="javascript:void(0)" class="resetBtn">СБРОСИТЬ ВСЁ</a>
+                            <a href="javascript:void(0)" class="resetBtn whiteBtn">СБРОСИТЬ ВСЁ</a>
                         </div>
                         <div class="item">
                             <div class="radio-text">
@@ -922,17 +922,17 @@
                         <div class="text-wrap">
                             <p>Прямоугольное сечение</p>
                             <span class="value">0.00 грамм</span>
-                            <a href="javascript:void(0)" class="setValue">ПОДСТАВИТЬ</a>
+                            <a href="javascript:void(0)" class="setValue whiteBtn">ПОДСТАВИТЬ</a>
                         </div>
                         <div class="text-wrap">
                             <p>Полукруглое сечение</p>
                             <span class="value">0.00 грамм</span>
-                            <a href="javascript:void(0)" class="setValue">ПОДСТАВИТЬ</a>
+                            <a href="javascript:void(0)" class="setValue whiteBtn">ПОДСТАВИТЬ</a>
                         </div>
                         <div class="text-wrap">
                             <p>Круглое сечение</p>
                             <span class="value">0.00 грамм</span>
-                            <a href="javascript:void(0)" class="setValue">ПОДСТАВИТЬ</a>
+                            <a href="javascript:void(0)" class="setValue whiteBtn">ПОДСТАВИТЬ</a>
                         </div>
                     </div>
                 </div>
@@ -944,7 +944,7 @@
                 <div class="calculator__inserts-first">
                     <div class="heading-flex">
                         <h4>МАЛЕНЬКИЕ КАМНИ</h4>
-                        <a href="javascript:void(0)" class="resetBtn">СБРОСИТЬ</a>
+                        <a href="javascript:void(0)" class="resetBtn whiteBtn">СБРОСИТЬ</a>
                     </div>
                     <div class="checkbox-btns">
                         <p>Поставщики</p>
@@ -1088,7 +1088,7 @@
                 <div class="calculator__inserts-second">
                     <div class="heading-flex">
                         <h4>КРУПНЫЕ КАМНИ</h4>
-                        <a href="javascript:void(0)" class="resetBtn">СБРОСИТЬ</a>
+                        <a href="javascript:void(0)" class="resetBtn whiteBtn">СБРОСИТЬ</a>
                     </div>
                     <div class="checkbox-btns">
                         <p>Поставщики</p>
@@ -1289,28 +1289,35 @@
                             <div class="row">
                                 <div class="cell">
                                     <p>Итого</p>
+                                    <p class="discountP">Итого со скидкой</p>
                                 </div>
                                 <div class="cell"><span>80 500 ₽</span></div>
                             </div>
                         </div>
-                        <div class="radio-btns">
-                            <label for="percent" class="val1"><span>Процент</span></label>
-                            <span class="radio-btns__wrapper">
-                            <input type="radio" name="metal" id="percent" checked>
-                            <input type="radio" name="metal" id="sum" class="right">
-                            <span aria-hidden="true" class="radio-btns__switcher"></span>
-                            </span>
-                            <label for="sum" class="val2"><span>Сумма</span></label>
+                        <div class="discount">
+                            <a href="javascript:void(0)" class="applyDiscount whiteBtn">ПРИМЕНИТЬ СКИДКУ</a>
+                            <div class="discount__info">
+                                <div class="radio-btns">
+                                    <label for="percent" class="val1"><span>Процент</span></label>
+                                    <span class="radio-btns__wrapper">
+                                    <input type="radio" name="metal" id="percent" checked>
+                                    <input type="radio" name="metal" id="sum" class="right">
+                                    <span aria-hidden="true" class="radio-btns__switcher"></span>
+                                    </span>
+                                    <label for="sum" class="val2"><span>Сумма</span></label>
+                                </div>
+                                <input type="text" placeholder="0%" class="viewPrice">
+                                <a href="javascript:void(0)" class="resetDiscount whiteBtn">ОТМЕНИТЬ СКИДКУ</a>
+                            </div>
                         </div>
-                        <input type="text" placeholder="0%" class="viewPrice">
                         <div class="addBtn">
                             <button>ДОБАВИТЬ К ЗАКАЗУ</button>
                         </div>
-                        <a href="javascript:void(0)" class="showOptions">ПОКАЗАТЬ ТЕХНИЧЕСКИЕ ПАРАМЕТРЫ ЗАКАЗА</a>
+                        <a href="javascript:void(0)" class="showOptions whiteBtn">ПОКАЗАТЬ ТЕХНИЧЕСКИЕ ПАРАМЕТРЫ ЗАКАЗА</a>
                         <div class="primeCost">
                             <div class="heading">
                                 <h3>СЕБЕСТОИМОСТЬ</h3>
-                                <a href="javascript:void(0)" class="hideBlk">СКРЫТЬ</a>
+                                <a href="javascript:void(0)" class="hideBlk whiteBtn">СКРЫТЬ</a>
                             </div>
                             <div class="parametersList">
                                 <div class="row">
@@ -1396,6 +1403,7 @@
                                 <div class="row">
                                     <div class="cell">
                                         <p>Итого</p>
+                                        <p class="discountP">Итого со скидкой</p>
                                     </div>
                                     <div class="cell"><span>80 500 ₽</span></div>
                                 </div>

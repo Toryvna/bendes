@@ -82,7 +82,7 @@
         padding: 17px 26px;
         border: none;
     }
-    .resetBtn{
+    .whiteBtn{
         display: inline-block;
         color: #000000;
         font-family: "Lato-Medium";
@@ -91,6 +91,8 @@
         padding: 5px;
         border-radius: 2px;
         border: 1px solid #000000;
+    }
+    .resetBtn{
         margin-left: 10px;
     }
     .heading-flex{
@@ -196,14 +198,6 @@
             font-size: 14px;
         }
         .setValue{
-            display: inline-block;
-            color: #000000;
-            font-family: 'Lato-Medium';
-            font-size: 12px;
-            letter-spacing: 1.8px;
-            padding: 3px;
-            border-radius: 2px;
-            border: 1px solid #000000;
             margin-left: 20px;
         }
     }
@@ -489,7 +483,7 @@
         @include align-items(center);
         position: relative;
         max-width: 100%;
-        margin-bottom: 15px;
+        margin: 15px 0;
         label {
             cursor: pointer;
             span{
@@ -507,6 +501,7 @@
             opacity: 0;
             position: relative;
             z-index: 1;
+            padding: 0;
             cursor: pointer;
         }
         &__wrapper {
@@ -619,6 +614,17 @@
         .result{
             margin: 20px 0;
             max-width: 400px;
+            &.withDiscount{
+                p,span{
+                    color: #8D0A19;
+                }
+                p{
+                    display: none;
+                    &.discountP{
+                        display: block;
+                    }
+                }
+            }
             .row{
                 @include flexbox;
                 @include align-items(center);
@@ -634,6 +640,9 @@
             p{
                 font-family: 'Lato-Medium';
                 margin-right: 10px;
+                &.discountP{
+                    display: none;
+                }
             }
             span{
                 font-size: 22px;
@@ -647,15 +656,22 @@
             margin-top: 30px;
         }
         .showOptions{
-            display: inline-block;
-            color: #000000;
-            font-family: "Lato-Medium";
-            font-size: 9px;
-            letter-spacing: 1.8px;
-            padding: 5px;
-            border-radius: 2px;
-            border: 1px solid #000000;
             margin-top: 30px;
+        }
+        .discount{
+            &__info{
+                display: none;
+                &.show{
+                    display: block;
+                }
+            }
+            .resetDiscount{
+                margin-top: 10px;
+                display: none;
+                &.show{
+                    display: inline-block;
+                }
+            }
         }
         .primeCost{
             display: none;
@@ -667,14 +683,6 @@
                 @include flexbox;
                 @include align-items(center);
                 .hideBlk{
-                    display: inline-block;
-                    color: #000000;
-                    font-family: "Lato-Medium";
-                    font-size: 9px;
-                    letter-spacing: 1.8px;
-                    padding: 5px;
-                    border-radius: 2px;
-                    border: 1px solid #000000;
                     margin-left: 15px;
                 }
             }
@@ -792,6 +800,12 @@
             .vendorCode {
                 button {
                     height: 54px;
+                }
+            }
+            .discount {
+                .resetDiscount {
+                    margin-top: 0;
+                    margin-left: 20px;
                 }
             }
         }
@@ -1067,6 +1081,13 @@
             &.large {
                 .jcf-select {
                     width: 256px;
+                }
+            }
+        }
+        &__cost {
+            .result {
+                span {
+                    font-size: 36px;
                 }
             }
         }

@@ -59,6 +59,23 @@ $(document).ready(function(){
         $('.primeCost').removeClass('active');
     });
 
+    //show/hide discount info
+    $(".applyDiscount").on('click', function(){
+        $(this).hide();
+        $('.discount__info').addClass('show');
+    });
+    $('.viewPrice').on("input", function(){
+        $('.resetDiscount').addClass('show');
+        $('.calculator__cost .result').addClass('withDiscount');
+    });
+    $(".resetDiscount").on('click', function(){
+        $('.applyDiscount').show();
+        $('.discount__info').removeClass('show');
+        $('.calculator__cost .result').removeClass('withDiscount');
+    });
+
+
+
     //upload image 
     $("#file").change(function(){
         UploadImg(this);
