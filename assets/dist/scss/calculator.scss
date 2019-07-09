@@ -708,9 +708,16 @@
         }
         .imgs-wrap{
             @include flexbox;
+            @include flex-wrap(wrap);
+            @include justify-content(space-between);
+            @include align-items(flex-start);
+            max-width: 600px;
             img{
-                max-width: 100%;
+                width: calc(50% - 5px);
                 margin-bottom: 20px;
+                &:only-child {
+                    width: 100%;
+                }
             }
         }
         .input-file {
@@ -736,6 +743,40 @@
                     i{
                         margin-right: 5px;
                     }
+                }
+            }
+        }
+        .addingPhotos{
+            color: rgba(0, 0, 0, 0.8);
+            font-family: 'Lato-Medium';
+            font-size: 16px;
+            letter-spacing: 0.4px;
+            display: none;
+            .plus{
+                display: inline-block;
+                position: relative;
+                width: 17px;
+                height: 17px;
+                margin-left: 15px;
+                &::before{
+                    content: '';
+                    background-color: #000;
+                    height: 1px;
+                    width: 100%;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                }
+                &::after{
+                    content: '';
+                    background-color: #000;
+                    width: 1px;
+                    height: 100%;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
                 }
             }
         }

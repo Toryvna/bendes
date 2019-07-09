@@ -770,10 +770,27 @@
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: space-between;
+  -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+  -ms-align-items: flex-start;
+  align-items: flex-start;
+  max-width: 600px;
 }
 .calculator__cost .imgs-wrap img {
-  max-width: 100%;
+  width: calc(50% - 5px);
   margin-bottom: 20px;
+}
+.calculator__cost .imgs-wrap img:only-child {
+  width: 100%;
 }
 .calculator__cost .input-file input {
   text-decoration: underline;
@@ -796,6 +813,40 @@
 }
 .calculator__cost .input-file span.uploadTitle i {
   margin-right: 5px;
+}
+.calculator__cost .addingPhotos {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "Lato-Medium";
+  font-size: 16px;
+  letter-spacing: 0.4px;
+  display: none;
+}
+.calculator__cost .addingPhotos .plus {
+  display: inline-block;
+  position: relative;
+  width: 17px;
+  height: 17px;
+  margin-left: 15px;
+}
+.calculator__cost .addingPhotos .plus::before {
+  content: "";
+  background-color: #000;
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.calculator__cost .addingPhotos .plus::after {
+  content: "";
+  background-color: #000;
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @media screen and (min-width: 768px) {

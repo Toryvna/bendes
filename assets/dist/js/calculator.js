@@ -77,37 +77,27 @@ $(document).ready(function(){
 
 
     //upload image 
-    $("#file").change(function(){
-        UploadImg(this);
-    });
-
-    function UploadImg(input) {
-        
-        var files = input.files || input.currentTarget.files;
-    
-        var reader = [];
-        var images = document.getElementById('imgs-wrap');
-        var name;
-        for (var i in files) {
-            if (files.hasOwnProperty(i)) {
-                name = 'file' + i;
-                
-                reader[i] = new FileReader();
-                reader[i].readAsDataURL(input.files[i]);
-                
-                images.innerHTML += '<img id="'+ name +'" src="" />';
-                
-                (function (name) {
-                    reader[i].onload = function (e) {
-                        console.log(document.getElementById(name));
-                        document.getElementById(name).src = e.target.result;
-                    };
-                })(name);
-                
-                
-                console.log(files[i]);
+    function readURL(input) {
+        var img = $('<img>'); 
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            
+            reader.onload = function (e) {
+                img.attr('src', e.target.result);
+                img.appendTo('#imgs-wrap');
             }
+            reader.readAsDataURL(input.files[0]);
+            $('.addingPhotos-blk').hide();
+            $('.addingPhotos').show();
         }
     }
+    $("#file").change(function(){
+        readURL(this);
+    });
+
+    $('.addingPhotos').on('click', function(){
+        $('.addingPhotos-blk').show();
+        $(this).hide();
+    });
 
 });
