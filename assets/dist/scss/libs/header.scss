@@ -538,9 +538,8 @@
                             font-family: 'Lato-Medium';
                         }
                         ul{
-                            margin: 20px 0 40px;
+                            margin: 10px 0 20px;
                             li{
-                                margin-bottom: 20px;
                                 &:last-of-type{
                                     margin-bottom: 0;
                                 }
@@ -548,6 +547,8 @@
                                     color: #000000;
                                     font-size: 12px;
                                     letter-spacing: 1.8px;
+                                    padding: 10px 0;
+                                    display: inline-block;
                                 }
                             }
                             &.faceting{

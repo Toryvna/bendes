@@ -477,6 +477,7 @@
 .calculator .select .jcf-select {
   width: 110px;
   display: block;
+  cursor: pointer;
   position: relative;
 }
 .calculator .select .jcf-select span {
@@ -517,6 +518,9 @@
 .calculator .select .jcf-select .jcf-select-drop .jcf-option {
   padding: 6px 16px 8px;
   display: block;
+}
+.calculator .select .jcf-select .jcf-select-drop .jcf-option:hover {
+  color: #8D0A19;
 }
 .calculator .select.large .jcf-select {
   width: 180px;
@@ -1614,6 +1618,10 @@
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
   }
   .sendOrder .form-input label {
     display: block;
@@ -1621,6 +1629,7 @@
   }
   .sendOrder .form-input input {
     width: 75%;
+    height: 54px;
   }
   .sendOrder .form-textarea {
     display: -webkit-box;
@@ -1632,6 +1641,7 @@
   .sendOrder .form-textarea label {
     display: block;
     width: 25%;
+    padding-top: 18px;
   }
   .sendOrder .form-textarea textarea {
     width: 75%;

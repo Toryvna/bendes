@@ -435,6 +435,7 @@
         .jcf-select {
             width: 110px;
             display: block;
+            cursor: pointer;
             position: relative;
             span{
                 color: #000000;
@@ -477,6 +478,9 @@
                 .jcf-option{
                     padding: 6px 16px 8px;
                     display: block;
+                    &:hover{
+                        color: #8D0A19;
+                    }
                 }
             }
         }
@@ -1469,12 +1473,14 @@
         }
         .form-input{
             @include flexbox;
+            @include align-items(center);
             label{
                 display: block;
                 width: 25%;
             }
             input{
                 width: 75%;
+                height: 54px;
             }
         }
         .form-textarea{
@@ -1482,6 +1488,7 @@
             label{
                 display: block;
                 width: 25%;
+                padding-top: 18px;
             }
             textarea{
                 width: 75%;
