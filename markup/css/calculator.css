@@ -9,19 +9,6 @@
   border: 1px solid #000000;
 }
 
-button {
-  display: inline-block;
-  cursor: pointer;
-  color: #ffffff;
-  font-family: "Lato-Medium";
-  font-size: 14px;
-  letter-spacing: 1.68px;
-  border-radius: 2px;
-  background-color: #8d0a19;
-  padding: 17px 26px;
-  border: none;
-}
-
 .redBtn {
   display: inline-block;
   cursor: pointer;
@@ -37,6 +24,18 @@ button {
 
 .calculator {
   padding: 50px 0;
+}
+.calculator button {
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Lato-Medium";
+  font-size: 14px;
+  letter-spacing: 1.68px;
+  border-radius: 2px;
+  background-color: #8d0a19;
+  padding: 17px 26px;
+  border: none;
 }
 .calculator__heading {
   text-align: center;
@@ -917,6 +916,18 @@ button {
   transform: translate(-50%, -50%);
 }
 
+.order__list button {
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Lato-Medium";
+  font-size: 14px;
+  letter-spacing: 1.68px;
+  border-radius: 2px;
+  background-color: #8d0a19;
+  padding: 17px 26px;
+  border: none;
+}
 .order__list h4 {
   font-size: 20px;
 }
@@ -1068,6 +1079,18 @@ button {
 .sendOrder {
   background-color: #eaeaeb;
   padding: 60px 0;
+}
+.sendOrder button {
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Lato-Medium";
+  font-size: 14px;
+  letter-spacing: 1.68px;
+  border-radius: 2px;
+  background-color: #8d0a19;
+  padding: 17px 26px;
+  border: none;
 }
 .sendOrder .item:first-of-type {
   margin-bottom: 40px;
@@ -1356,6 +1379,10 @@ button {
     width: calc(50% - 10px);
     max-width: 670px;
   }
+  .order__list-item .imgBlk .imgWrap figure {
+    width: calc(50% - 20px);
+    margin-bottom: 40px;
+  }
   .order__list-item .infoBlk {
     width: calc(50% - 10px);
     margin-top: 0;
@@ -1382,6 +1409,10 @@ button {
   }
 }
 @media screen and (min-width: 1024px) {
+  .whiteBtn {
+    font-size: 12px;
+  }
+
   .calculator {
     padding-top: 100px;
   }
@@ -1437,7 +1468,7 @@ button {
     padding: 60px 0;
   }
   .calculator__firstInfo .heading-flex {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
   }
   .calculator__inserts {
     padding: 60px 0;
@@ -1479,7 +1510,7 @@ button {
     margin-bottom: 0;
   }
   .calculator .input-wrap {
-    margin: 10px 0 25px;
+    margin: 30px 0 25px;
   }
   .calculator .table {
     margin-top: 30px;
@@ -1614,9 +1645,6 @@ button {
   }
   .sendOrder .createLink {
     font-size: 16px;
-  }
-  .sendOrder .whiteBtn {
-    font-size: 12px;
   }
   .sendOrder h4 {
     margin: 30px 0;
@@ -1782,6 +1810,10 @@ button {
   }
   .order__list-item .infoBlk ul li {
     margin: 20px 0;
+  }
+
+  .sendOrder .flex-wrap .item {
+    width: calc(50% - 32px);
   }
 }
 @media screen and (min-width: 1400px) {

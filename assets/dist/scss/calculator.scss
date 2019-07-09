@@ -11,18 +11,6 @@
     border-radius: 2px;
     border: 1px solid #000000;
 }
-button{
-    display: inline-block;
-    cursor: pointer;
-    color: #ffffff;
-    font-family: 'Lato-Medium';
-    font-size: 14px;
-    letter-spacing: 1.68px;
-    border-radius: 2px;
-    background-color: #8d0a19;
-    padding: 17px 26px;
-    border: none;
-}
 .redBtn{
     display: inline-block;
     cursor: pointer;
@@ -37,6 +25,18 @@ button{
 }
 .calculator{
     padding: 50px 0;
+    button{
+        display: inline-block;
+        cursor: pointer;
+        color: #ffffff;
+        font-family: 'Lato-Medium';
+        font-size: 14px;
+        letter-spacing: 1.68px;
+        border-radius: 2px;
+        background-color: #8d0a19;
+        padding: 17px 26px;
+        border: none;
+    }
     &__heading{
         text-align: center;
         margin-bottom: 30px;
@@ -852,6 +852,18 @@ button{
 }
 
 .order__list{
+    button{
+        display: inline-block;
+        cursor: pointer;
+        color: #ffffff;
+        font-family: 'Lato-Medium';
+        font-size: 14px;
+        letter-spacing: 1.68px;
+        border-radius: 2px;
+        background-color: #8d0a19;
+        padding: 17px 26px;
+        border: none;
+    }
     h4{
         font-size: 20px;
     }
@@ -991,6 +1003,18 @@ button{
 .sendOrder{
     background-color: #eaeaeb;
     padding: 60px 0;
+    button{
+        display: inline-block;
+        cursor: pointer;
+        color: #ffffff;
+        font-family: 'Lato-Medium';
+        font-size: 14px;
+        letter-spacing: 1.68px;
+        border-radius: 2px;
+        background-color: #8d0a19;
+        padding: 17px 26px;
+        border: none;
+    }
     .item{
         &:first-of-type{
             margin-bottom: 40px;
@@ -1232,6 +1256,12 @@ button{
             .imgBlk{
                 width: calc(50% - 10px);
                 max-width: 670px;
+                .imgWrap{
+                    figure{
+                        width: calc(50% - 20px);
+                        margin-bottom: 40px;
+                    }
+                }
             }
             .infoBlk{
                 width: calc(50% - 10px);
@@ -1252,6 +1282,9 @@ button{
 }
 
 @media screen and (min-width: 1024px){
+    .whiteBtn{
+        font-size: 12px;
+    }
     .calculator {
         padding-top: 100px;
         &__heading{
@@ -1283,7 +1316,7 @@ button{
         &__firstInfo{
             padding: 60px 0;
             .heading-flex{
-                margin-bottom: 25px;
+                margin-bottom: 30px;
             }
         }
         &__inserts{
@@ -1330,7 +1363,7 @@ button{
             }
         }
         .input-wrap{
-            margin: 10px 0 25px;
+            margin: 30px 0 25px;
         }
         .table {
             margin-top: 30px;
@@ -1465,9 +1498,6 @@ button{
         }
         .createLink{
             font-size: 16px;
-        }
-        .whiteBtn{
-            font-size: 12px;
         }
         h4{
             margin: 30px 0;
@@ -1634,6 +1664,13 @@ button{
                         margin: 20px 0;
                     }
                 }
+            }
+        }
+    }
+    .sendOrder{
+        .flex-wrap{
+            .item{
+                width: calc(50% - 32px);
             }
         }
     }

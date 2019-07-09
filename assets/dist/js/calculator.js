@@ -110,9 +110,5 @@ $(document).ready(function(){
         $(this).hide();
         $(this).parent().find('.linksBlk').show();
     });
-    
-    $(".createLink").on('click', function(){
-        $(this).parent().find('.linksBlk').show();
-    })
 
 });
