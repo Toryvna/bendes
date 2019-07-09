@@ -63,8 +63,6 @@ $(document).ready(function(){
     $(".applyDiscount").on('click', function(){
         $(this).hide();
         $('.discount__info').addClass('show');
-    });
-    $('.viewPrice').on("input", function(){
         $('.resetDiscount').addClass('show');
         $('.calculator__cost .result').addClass('withDiscount');
     });
@@ -73,8 +71,6 @@ $(document).ready(function(){
         $('.discount__info').removeClass('show');
         $('.calculator__cost .result').removeClass('withDiscount');
     });
-
-
 
     //upload image 
     function readURL(input) {
@@ -99,5 +95,24 @@ $(document).ready(function(){
         $('.addingPhotos-blk').show();
         $(this).hide();
     });
+    
+
+    //copy link
+    $('#copyLink').click(function() {
+	    var $temp = $("<input>");
+	    $("body").append($temp);
+	    $temp.val($('#linkAddress').text()).select();
+	    document.execCommand("copy");
+	    $temp.remove();
+    });
+    
+    $(".create-linkAddress").on('click', function(){
+        $(this).hide();
+        $(this).parent().find('.linksBlk').show();
+    });
+    
+    $(".createLink").on('click', function(){
+        $(this).parent().find('.linksBlk').show();
+    })
 
 });

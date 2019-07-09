@@ -27,6 +27,11 @@
             </div>
             <p class="msg">Изделие не найдено! Убедитесь, что правильно ввели артикул!</p>
             <p class="error-msg">Изделие найдено и его характеристики добавлены в калькулятор!</p>
+            <div class="successful-msg">
+                <p>Изделие найдено!</p>
+                <a href="javascript:void(0)" class="whiteBtn">ЗАМЕНИТЬ ТЕКУЩИЙ РАСЧЁТ</a>
+                <a href="javascript:void(0)" class="whiteBtn">ДОБАВИТЬ ТЕКУЩИЙ РАСЧЁТ К ЗАКАЗУ И ЗАГРУЗИТЬ ХАРАКТЕРИСТИКИ</a>
+            </div>
         </div>
     </div>
     <div class="calculator__firstInfo">
@@ -516,6 +521,13 @@
                     </div>
                     <div class="addBtn">
                         <button>ДОБАВИТЬ К ЗАКАЗУ</button>
+                        <div class="checkbox-btn">
+                            <label class="wrap">
+                                <input type="checkbox" name="checkbox">
+                                <span class="checkmark"></span>
+                                <span class="label">Расчёт выполнен на несколько изделий</span>
+                            </label>
+                        </div>
                     </div>
                     <a href="javascript:void(0)" class="showOptions whiteBtn">ПОКАЗАТЬ ТЕХНИЧЕСКИЕ ПАРАМЕТРЫ ЗАКАЗА</a>
                     <div class="primeCost">
@@ -530,8 +542,8 @@
                             </div>
                             <div class="row">
                                 <div class="cell"><p>Золото (585)</p></div>
-                                <div class="cell"><span>20 500 ₽</span><a href="javasript:void(0)" class="showAll active"></a></div>
-                                <div class="hiddenInfo active">
+                                <div class="cell"><span>20 500 ₽</span><a href="javasript:void(0)" class="showAll"></a></div>
+                                <div class="hiddenInfo">
                                     <div class="row">
                                         <div class="cell"><p>Металл</p></div>
                                         <div class="cell"><span>7 000 ₽</span></div>
@@ -608,9 +620,408 @@
             </div>
         </div>
     </div>
-
-
 </div>
+<div class="order__list">
+    <div class="container">
+        <h3>ЗАКАЗ</h3>
+    </div>
+    <div class="order__list-item">
+        <div class="container">
+            <h4>ИЗДЕЛИЕ 1: КОЛЬЦО</h4>
+            <div class="flex-wrap">
+                <div class="imgBlk">
+                    <div class="imgWrap">
+                        <figure>
+                            <img src="../img/single-product/product-img1.png" alt="">
+                        </figure>
+                    </div>
+                    <div class="btnsWrap">
+                        <a href="javascript:void(0)" class="redBtn change">ИЗМЕНИТЬ</a>
+                        <a href="javascript:void(0)" class="copy"><i class="icon-copy"></i></a>
+                        <a href="javascript:void(0)" class="delete"><i class="icon-trash-alt"></i></a>
+                    </div>
+                </div>
+                <div class="infoBlk">
+                    <div class="table">
+                        <div class="row">
+                            <div class="cell">
+                                <p>Металл</p>
+                            </div>
+                            <div class="cell">
+                                <span>Золото</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="cell">
+                                <p>Проба</p>
+                            </div>
+                            <div class="cell">
+                                <span>585</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="cell">
+                                <p>Вес металла</p>
+                            </div>
+                            <div class="cell">
+                                <span>8.58 грамм</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h4>МАЛЕНЬКИЕ КАМНИ</h4>
+                    <ul>
+                        <li>
+                            <p>Чёрный бриллиант: 20 шт., 1.5 мм., огранки “Круг”</p>
+                        </li>
+                        <li>
+                            <p>Бриллиант: 20 шт., 1.5 мм., 3/5, огранки “Круг”</p>
+                        </li>
+                    </ul>
+                    <h4>КРУПНЫЕ КАМНИ</h4>
+                    <ul>
+                        <li>
+                            <p>Бриллиант: 0.5 карат, G/VS2, огранки “Принцесса” (Very Good)</p>
+                        </li>
+                    </ul>
+                    <div class="table priceBlk">
+                        <div class="row price">
+                            <div class="cell">
+                                <p>Стоимость</p>
+                            </div>
+                            <div class="cell">
+                                <p>80 500 ₽</p>
+                            </div>
+                        </div>
+                        <div class="row discount">
+                            <div class="cell">
+                                <p>Скидка</p>
+                            </div>
+                            <div class="cell">
+                                <p>10 500 ₽</p>
+                            </div>
+                        </div>
+                        <div class="row price-new">
+                            <div class="cell">
+                                <p>Цена со скидкой</p>
+                            </div>
+                            <div class="cell">
+                                <p>70 000 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="order__list-item">
+        <div class="container">
+            <h4>ИЗДЕЛИЕ 2: КОЛЬЦО</h4>
+            <div class="flex-wrap">
+                <div class="imgBlk">
+                    <div class="imgWrap">
+                        <figure>
+                            <img src="../img/single-product/product-img1.png" alt="">
+                        </figure>
+                        <figure>
+                            <img src="../img/single-product/product-img1.png" alt="">
+                        </figure>
+                    </div>
+                    <div class="btnsWrap">
+                        <a href="javascript:void(0)" class="redBtn change">ИЗМЕНИТЬ</a>
+                        <a href="javascript:void(0)" class="copy"><i class="icon-copy"></i></a>
+                        <a href="javascript:void(0)" class="delete"><i class="icon-trash-alt"></i></a>
+                    </div>
+                </div>
+                <div class="infoBlk">
+                    <div class="table">
+                        <div class="row">
+                            <div class="cell">
+                                <p>Металл</p>
+                            </div>
+                            <div class="cell">
+                                <span>Золото</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="cell">
+                                <p>Проба</p>
+                            </div>
+                            <div class="cell">
+                                <span>585</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="cell">
+                                <p>Вес металла</p>
+                            </div>
+                            <div class="cell">
+                                <span>8.58 грамм</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h4>МАЛЕНЬКИЕ КАМНИ</h4>
+                    <ul>
+                        <li>
+                            <p>Чёрный бриллиант: 20 шт., 1.5 мм., огранки “Круг”</p>
+                        </li>
+                        <li>
+                            <p>Бриллиант: 20 шт., 1.5 мм., 3/5, огранки “Круг”</p>
+                        </li>
+                    </ul>
+                    <h4>КРУПНЫЕ КАМНИ</h4>
+                    <ul>
+                        <li>
+                            <p>Бриллиант: 0.5 карат, G/VS2, огранки “Принцесса” (Very Good)</p>
+                        </li>
+                    </ul>
+                    <div class="table priceBlk">
+                        <div class="row price">
+                            <div class="cell">
+                                <p>Стоимость</p>
+                            </div>
+                            <div class="cell">
+                                <p>80 500 ₽</p>
+                            </div>
+                        </div>
+                        <div class="row discount">
+                            <div class="cell">
+                                <p>Скидка</p>
+                            </div>
+                            <div class="cell">
+                                <p>10 500 ₽</p>
+                            </div>
+                        </div>
+                        <div class="row price-new">
+                            <div class="cell">
+                                <p>Цена со скидкой</p>
+                            </div>
+                            <div class="cell">
+                                <p>70 000 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="order__list-item">
+        <div class="container">
+            <h4>ИЗДЕЛИЕ 3: КОЛЬЦО</h4>
+            <div class="flex-wrap">
+                <div class="imgBlk">
+                    <div class="imgWrap">
+                        <figure>
+                            <img src="../img/single-product/product-img1.png" alt="">
+                        </figure>
+                        <figure>
+                            <img src="../img/single-product/product-img1.png" alt="">
+                        </figure>
+                        <figure>
+                            <img src="../img/single-product/product-img1.png" alt="">
+                        </figure>
+                    </div>
+                    <div class="btnsWrap">
+                        <a href="javascript:void(0)" class="redBtn change">ИЗМЕНИТЬ</a>
+                        <a href="javascript:void(0)" class="copy"><i class="icon-copy"></i></a>
+                        <a href="javascript:void(0)" class="delete"><i class="icon-trash-alt"></i></a>
+                    </div>
+                </div>
+                <div class="infoBlk">
+                    <div class="table">
+                        <div class="row">
+                            <div class="cell">
+                                <p>Металл</p>
+                            </div>
+                            <div class="cell">
+                                <span>Золото</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="cell">
+                                <p>Проба</p>
+                            </div>
+                            <div class="cell">
+                                <span>585</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="cell">
+                                <p>Вес металла</p>
+                            </div>
+                            <div class="cell">
+                                <span>8.58 грамм</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h4>МАЛЕНЬКИЕ КАМНИ</h4>
+                    <ul>
+                        <li>
+                            <p>Чёрный бриллиант: 20 шт., 1.5 мм., огранки “Круг”</p>
+                        </li>
+                        <li>
+                            <p>Бриллиант: 20 шт., 1.5 мм., 3/5, огранки “Круг”</p>
+                        </li>
+                    </ul>
+                    <h4>КРУПНЫЕ КАМНИ</h4>
+                    <ul>
+                        <li>
+                            <p>Бриллиант: 0.5 карат, G/VS2, огранки “Принцесса” (Very Good)</p>
+                        </li>
+                    </ul>
+                    <div class="table priceBlk">
+                        <div class="row price">
+                            <div class="cell">
+                                <p>Стоимость</p>
+                            </div>
+                            <div class="cell">
+                                <p>80 500 ₽</p>
+                            </div>
+                        </div>
+                        <div class="row discount">
+                            <div class="cell">
+                                <p>Скидка</p>
+                            </div>
+                            <div class="cell">
+                                <p>10 500 ₽</p>
+                            </div>
+                        </div>
+                        <div class="row price-new">
+                            <div class="cell">
+                                <p>Цена со скидкой</p>
+                            </div>
+                            <div class="cell">
+                                <p>70 000 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ОТПРАВИТЬ ЗАКАЗ КЛИЕНТУ с интеграцией -->
+<div class="sendOrder">
+    <div class="container">
+        <div class="flex-wrap">
+            <div class="item">
+                <h3>ОТПРАВИТЬ ЗАКАЗ КЛИЕНТУ</h3>
+                <form>
+                    <div class="form-checkbox">
+                        <div class="btn">
+                            <label class="wrap">
+                                <input type="checkbox" checked="checked" name="checkbox">
+                                <span class="checkmark"></span>
+                                <span class="label">Email</span>
+                            </label>
+                        </div>
+                        <div class="btn">
+                            <label class="wrap">
+                                <input type="checkbox" checked="checked" name="checkbox">
+                                <span class="checkmark"></span>
+                                <span class="label">WhatsApp</span>
+                            </label>
+                        </div>
+                    </div>
+                    <p>При невозможности отправки в WhatsApp сообщение будет отправлено по SMS</p>
+                    <div class="form-input">
+                        <label for="emailId">Email</label>
+                        <input type="email" id="emailId" placeholder="someone@domain.ru">
+                    </div>
+                    <div class="form-input">
+                        <label for="phoneId">Телефон</label>
+                        <input type="tel" id="phoneId" placeholder="+7 ХХХ ХХХ ХХ ХХ">
+                    </div>
+                    <div class="form-textarea">
+                        <label for="msgId">Сообщение</label>
+                        <textarea id="msgId" placeholder="Укажите, текст сообщения, который будет отправлен клиенту"></textarea>
+                    </div>
+                    <p>Сообщение и заказ будут добавлены в АМО автоматически при совпадении телефона</p>
+                    <p>Если номер телефона отличается, укажите ссылку на сделку в AMO</p>
+                    <a href="javascript:void(0)" class="whiteBtn">ПРИВЯЗАТЬ К СДЕЛКЕ В АМО</a>
+                    <div class="form-button">
+                        <button>СОХРАНИТЬ И ОТПРАВИТЬ КЛИЕНТУ</button>
+                    </div>
+                    <a href="javascript:void(0)" class="createLink">ТОЛЬКО СОХРАНИТЬ И СОЗДАТЬ ССЫЛКУ</a>
+                    <div class="linksBlk">
+                        <div class="linkWrap">
+                            <p>Ссылка на заказ</p>
+                            <div class="link"><span id="linkAddress">https://bendes.ru/invoice/746294772</span></div>
+                        </div>
+                        <a href="javascript:void(0)" id="copyLink" class="redBtn">СКОПИРОВАТЬ ССЫЛКУ</a>
+                    </div>
+                </form>
+            </div>
+            <div class="item">
+                <h3>СОСТАВ ЗАКАЗА</h3>
+                <h4>ИЗДЕЛИЕ 1: КОЛЬЦО</h4>
+                <div class="price">
+                    <p>Цена со скидкой</p>
+                    <p>70 000 ₽</p>
+                </div>
+                <h4>ИЗДЕЛИЕ 2: КОЛЬЦО</h4>
+                <div class="price">
+                    <p>Цена со скидкой</p>
+                    <p>70 000 ₽</p>
+                </div>
+                <h4>ИЗДЕЛИЕ 3: КОЛЬЦО</h4>
+                <div class="price">
+                    <p>Цена со скидкой</p>
+                    <p>70 000 ₽</p>
+                </div>
+                <h4>ИТОГО</h4>
+                <div class="price">
+                    <p>Итого со сидкой</p>
+                    <p><strong>140 000 ₽</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- конец ОТПРАВИТЬ ЗАКАЗ КЛИЕНТУ с интеграцией -->
+
+<!-- ОТПРАВИТЬ ЗАКАЗ КЛИЕНТУ без интеграции -->
+<div class="sendOrder">
+    <div class="container">
+        <div class="flex-wrap">
+            <div class="item">
+                <h3>СОХРАНИТЬ ЗАКАЗ</h3>
+                <a href="javascript:void(0)" class="redBtn create-linkAddress">СОХРАНИТЬ И СОЗДАТЬ ССЫЛКУ</a>
+                <div class="linksBlk">
+                    <div class="linkWrap">
+                        <p>Ссылка на заказ</p>
+                        <div class="link"><span id="linkAddress">https://bendes.ru/invoice/746294772</span></div>
+                    </div>
+                    <a href="javascript:void(0)" id="copyLink" class="redBtn">СКОПИРОВАТЬ ССЫЛКУ</a>
+                </div>
+            </div>
+            <div class="item">
+                <h3>СОСТАВ ЗАКАЗА</h3>
+                <h4>ИЗДЕЛИЕ 1: КОЛЬЦО</h4>
+                <div class="price">
+                    <p>Цена со скидкой</p>
+                    <p>70 000 ₽</p>
+                </div>
+                <h4>ИЗДЕЛИЕ 2: КОЛЬЦО</h4>
+                <div class="price">
+                    <p>Цена со скидкой</p>
+                    <p>70 000 ₽</p>
+                </div>
+                <h4>ИЗДЕЛИЕ 3: КОЛЬЦО</h4>
+                <div class="price">
+                    <p>Цена со скидкой</p>
+                    <p>70 000 ₽</p>
+                </div>
+                <h4>ИТОГО</h4>
+                <div class="price">
+                    <p>Итого со сидкой</p>
+                    <p><strong>140 000 ₽</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- конец ОТПРАВИТЬ ЗАКАЗ КЛИЕНТУ без интеграции -->
 
 <!-- build:section layout.footer-->
 <!-- /build -->
